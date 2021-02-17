@@ -4,6 +4,8 @@ Various research directions in learning (S)PDEs
 
 For now, this is a scratch pad to think through some connections, ideas and shortcomings of current approaches.
 
+I'm writing this in markdown, but we could totally do it in LaTeX or RMarkdown if people are into that.
+
 ## Dropout
 
 Dropout gives me a kinda-sorta posterior predictive density for a given NN model.
