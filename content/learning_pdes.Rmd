@@ -1,9 +1,10 @@
 ---
 nocite:
 - '@*'
-bibliography: refs.bib
+bibliography: learning_pdes.bib
 link-citations: true
 title: Learning PDEs
+slug: learning_pdes
 ---
 
 # Learning PDEs
