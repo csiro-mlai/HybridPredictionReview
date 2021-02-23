@@ -1,4 +1,12 @@
-# LearningPDEs
+---
+nocite:
+- '@*'
+bibliography: refs.bib
+link-citations: true
+title: Learning PDEs
+---
+
+# Learning PDEs
 
 Various research directions in learning approximations to (S)PDEs
 
@@ -33,7 +41,7 @@ We would like to learn solutions that
 Dropout gives me a kinda-sorta posterior predictive density for a given NN model.
 How does this propagate through timesteps in a forward-PDE model?
 
-@FoongPathologies; @GalConcrete2017; @GalDropout2015
+@FoongPathologies2019; @GalConcrete2017; @GalDropout2015
 
 ### Inverse dropout
 
