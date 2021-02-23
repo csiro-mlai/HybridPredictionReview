@@ -33,6 +33,8 @@ We would like to learn solutions that
 Dropout gives me a kinda-sorta posterior predictive density for a given NN model.
 How does this propagate through timesteps in a forward-PDE model?
 
+@FoongPathologies; @GalConcrete2017; @GalDropout2015
+
 ### Inverse dropout
 
 i.e. dropout for inverse problems such as learning latent fields or parameters. So if dropout gives us a posterior predictive. What if we want a posterior density over parameters, does it still work? The learned network parameters are still point estimates.
