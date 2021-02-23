@@ -52,3 +52,12 @@ i.e. dropout for inverse problems such as learning latent fields or parameters. 
 Physics-informed neural nets, an ”implicit” representation method, give us
 
 ### Generic operator learning
+
+
+## To build this document
+
+This markdown document renders using [pandoc](https://pandoc.org/) with the following command:
+
+```bash
+pandoc -s --citeproc README.md -o README.html
+```
