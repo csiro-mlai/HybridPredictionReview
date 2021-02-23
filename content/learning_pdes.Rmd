@@ -19,11 +19,17 @@ I'm writing this in markdown, but we could totally do it in LaTeX or RMarkdown i
 
 ### Computational efficiency
 
-PDE solvers are often slow
+PDE solvers are often slow, and inference is fast with a NN. 
+
+However we need to be careful about conditioning; If we out neural networl is not conditional upon parameters but must be retrained between parameter updates it is probably no longer fast. Unlike inference, training is not fast.
 
 ### Learning latent fields
 
+Learning forcings and geophysical perperties. TBD.
+
 ### Learning parameters
+
+If we are convinced our PDE is accurate, and can be bothered implementing it in a neural net, we can estimate parameters - see [PINNs](#pinn)
 
 ### Interpolating
 

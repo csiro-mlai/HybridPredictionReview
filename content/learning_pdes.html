@@ -18,13 +18,16 @@ slug: learning_pdes
 <h2>Problems to solve</h2>
 <div id="computational-efficiency" class="section level3">
 <h3>Computational efficiency</h3>
-<p>PDE solvers are often slow</p>
+<p>PDE solvers are often slow, and inference is fast with a NN.</p>
+<p>However we need to be careful about conditioning; If we out neural networl is not conditional upon parameters but must be retrained between parameter updates it is probably no longer fast. Unlike inference, training is not fast.</p>
 </div>
 <div id="learning-latent-fields" class="section level3">
 <h3>Learning latent fields</h3>
+<p>Learning forcings and geophysical perperties. TBD.</p>
 </div>
 <div id="learning-parameters" class="section level3">
 <h3>Learning parameters</h3>
+<p>If we are convinced our PDE is accurate, and can be bothered implementing it in a neural net, we can estimate parameters - see <a href="#pinn">PINNs</a></p>
 </div>
 <div id="interpolating" class="section level3">
 <h3>Interpolating</h3>
