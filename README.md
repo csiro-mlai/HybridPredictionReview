@@ -30,7 +30,7 @@ An obvious way to start it to learn a PDE over a grid or mesh.
 This is unsatisfactory for a variety of reasons (large GPU memory requirement, scale-dependent.)
 Can we move from grid coordinates to continuous space/time?
 
-### Generalisation
+### Generalisation/conditionalisation
 
 We would like to learn solutions that 
 
@@ -43,16 +43,20 @@ How does this propagate through timesteps in a forward-PDE model?
 
 @FoongPathologies2019; @GalConcrete2017; @GalDropout2015
 
-### Inverse dropout
+### Chaos expansion
 
-i.e. dropout for inverse problems such as learning latent fields or parameters. So if dropout gives us a posterior predictive. What if we want a posterior density over parameters, does it still work? The learned network parameters are still point estimates.
+Learning a basis expansion for an approximate SDE
 
 ### PINN
 
-Physics-informed neural nets, an ”implicit” representation method, give us
+Physics-informed neural nets, an ”implicit” representation method, give us rapid neural networks.
+See [PINNs](https://danmackinlay.name/notebook/ml_pde.html#learning-a-pde).
 
 ### Generic operator learning
 
+See, e.g. [Fourier neural operators](https://danmackinlay.name/notebook/ml_pde.html#fourier-neural-operator).
+
+These seem favourable in that they learn rapid approximations to PDEs. However, it is unclear how to conduct an error analysis upon them or do general inference.
 
 ## To build this document
 
@@ -61,3 +65,8 @@ This markdown document renders using [pandoc](https://pandoc.org/) with the foll
 ```bash
 pandoc -s --citeproc README.md -o README.html
 ```
+
+## References
+
+::: {#refs}
+:::

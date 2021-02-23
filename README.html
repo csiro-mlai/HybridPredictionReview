@@ -245,20 +245,23 @@
 <h3 id="learning-parameters">Learning parameters</h3>
 <h3 id="interpolating">Interpolating</h3>
 <p>An obvious way to start it to learn a PDE over a grid or mesh. This is unsatisfactory for a variety of reasons (large GPU memory requirement, scale-dependent.) Can we move from grid coordinates to continuous space/time?</p>
-<h3 id="generalisation">Generalisation</h3>
+<h3 id="generalisationconditionalisation">Generalisation/conditionalisation</h3>
 <p>We would like to learn solutions that</p>
 <h2 id="tools">Tools</h2>
 <h3 id="dropout">Dropout</h3>
 <p>Dropout gives me a kinda-sorta posterior predictive density for a given NN model. How does this propagate through timesteps in a forward-PDE model?</p>
 <p><span class="citation" data-cites="FoongPathologies2019"><a href="#ref-FoongPathologies2019" role="doc-biblioref">Foong et al.</a> (<a href="#ref-FoongPathologies2019" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="GalConcrete2017"><a href="#ref-GalConcrete2017" role="doc-biblioref">Gal, Hron, and Kendall</a> (<a href="#ref-GalConcrete2017" role="doc-biblioref">2017</a>)</span>; <span class="citation" data-cites="GalDropout2015"><a href="#ref-GalDropout2015" role="doc-biblioref">Gal and Ghahramani</a> (<a href="#ref-GalDropout2015" role="doc-biblioref">2015</a>)</span></p>
-<h3 id="inverse-dropout">Inverse dropout</h3>
-<p>i.e. dropout for inverse problems such as learning latent fields or parameters. So if dropout gives us a posterior predictive. What if we want a posterior density over parameters, does it still work? The learned network parameters are still point estimates.</p>
+<h3 id="chaos-expansion">Chaos expansion</h3>
+<p>Learning a basis expansion for an approximate SDE</p>
 <h3 id="pinn">PINN</h3>
-<p>Physics-informed neural nets, an ”implicit” representation method, give us</p>
+<p>Physics-informed neural nets, an ”implicit” representation method, give us rapid neural networks. See <a href="https://danmackinlay.name/notebook/ml_pde.html#learning-a-pde">PINNs</a>.</p>
 <h3 id="generic-operator-learning">Generic operator learning</h3>
+<p>See, e.g. <a href="https://danmackinlay.name/notebook/ml_pde.html#fourier-neural-operator">Fourier neural operators</a>.</p>
+<p>These seem favourable in that they learn rapid approximations to PDEs. However, it is unclear how to conduct an error analysis upon them or do general inference.</p>
 <h2 id="to-build-this-document">To build this document</h2>
 <p>This markdown document renders using <a href="https://pandoc.org/">pandoc</a> with the following command:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">-s</span> <span class="at">--citeproc</span> README.md <span class="at">-o</span> README.html</span></code></pre></div>
+<h2 id="references">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-AltosaarHierarchical2019" class="csl-entry" role="doc-biblioentry">
 Altosaar, Jaan, Rajesh Ranganath, and Kyle Cranmer. 2019. <span>“Hierarchical Variational Models for Statistical Physics.”</span> In <em><span>NeurIPS</span></em>, 5.
