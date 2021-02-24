@@ -5,9 +5,13 @@ bibliography: learning_pdes.bib
 link-citations: true
 title: Learning PDEs
 slug: learning_pdes
+date: 2021-02-24T21:13:14-05:00
 ---
 
-# Learning PDEs
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
 
 Various research directions in learning approximations to (S)PDEs
 
@@ -15,57 +19,57 @@ For now, this is a scratch pad to think through some connections, ideas and shor
 
 I'm writing this in markdown, but we could totally do it in LaTeX or RMarkdown if people are into that.
 
-## Problems to solve
+# Problems to solve
 
-### Computational efficiency
+## Computational efficiency
 
 PDE solvers are often slow, and inference is fast with a NN. 
 
 However we need to be careful about conditioning; If we out neural networl is not conditional upon parameters but must be retrained between parameter updates it is probably no longer fast. Unlike inference, training is not fast.
 
-### Learning latent fields
+## Learning latent fields
 
 Learning forcings and geophysical perperties. TBD.
 
-### Learning parameters
+## Learning parameters
 
 If we are convinced our PDE is accurate, and can be bothered implementing it in a neural net, we can estimate parameters - see [PINNs](#pinn)
 
-### Interpolating
+## Interpolating
 
 An obvious way to start it to learn a PDE over a grid or mesh.
 This is unsatisfactory for a variety of reasons (large GPU memory requirement, scale-dependent.)
 Can we move from grid coordinates to continuous space/time?
 
-### Generalisation/conditionalisation
+## Generalisation/conditionalisation
 
 We would like to learn solutions that 
 
-## Tools
+# Tools
 
-### Dropout
+## Dropout
 
 Dropout gives me a kinda-sorta posterior predictive density for a given NN model.
 How does this propagate through timesteps in a forward-PDE model?
 
 @FoongPathologies2019; @GalConcrete2017; @GalDropout2015
 
-### Chaos expansion
+## Chaos expansion
 
 Learning a basis expansion for an approximate SDE
 
-### PINN
+## PINN
 
 Physics-informed neural nets, an ”implicit” representation method, give us rapid neural networks.
 See [PINNs](https://danmackinlay.name/notebook/ml_pde.html#learning-a-pde).
 
-### Generic operator learning
+## Generic operator learning
 
 See, e.g. [Fourier neural operators](https://danmackinlay.name/notebook/ml_pde.html#fourier-neural-operator).
 
 These seem favourable in that they learn rapid approximations to PDEs. However, it is unclear how to conduct an error analysis upon them or do general inference.
 
-## Parameters
+# Parameters
 
 Material parameters.
 
@@ -73,7 +77,7 @@ Forcings.
 
 Responses.
 
-## References
+# References
 
 ::: {#refs}
 :::

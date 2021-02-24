@@ -1,0 +1,150 @@
+---
+nocite:
+- '@*'
+bibliography: groundwater_emulation.bib
+link-citations: true
+title: Groundwater emulation
+slug: groundwater_emulation
+date: 2021-02-24T21:13:14-05:00
+---
+
+
+## Translation dictionary
+
+stress period
+: time series
+
+stress
+: external signal
+
+
+
+
+## A graphical emulation model
+
+\(\mathcal{D}\)
+: spatial domain
+
+\(\mathcal{L}_h(x)\)
+: some small spatial neighbourhood of \(x\), \(\{x':\|x'-x\|<h\}\)
+
+\(\mathcal{H}_{\ell}(t)\)
+: some small temporal history of \(t,\) \(\{t':\ell-t\leq t'<t\}\)
+
+\(s\)
+: Forcings (or stresses) represent input flows, \(s=s(t)\)
+
+\(v\)
+: observed forcings, \(v = s+\epsilon_{s}\)
+
+\(w\)
+: Latent head values (a latent field of water).
+
+\(j\)
+: Observed heads, \(j = w+\epsilon_{w}\)
+
+$u$
+: latent hydraulic conductivity field
+
+\(\eta\)
+: process modeling noise?
+
+Our notional process model is something like
+
+\[\begin{aligned}
+w(x,t) &=  f_h(\\
+  &\qquad \{w(x',t');x'\in \mathcal{L}(x), t'\in \mathcal{H}(t), \\
+  &\qquad\{s(x,t);x'\in \mathcal{L}(x), t'\in \mathcal{H}(t)\}, \\
+  &\qquad\{u(x'); x'\in \mathcal{L}(x)\},
+  )\\
+u(x)&\sim \mathcal{N}(\mu_x, K_{xx})
+\end{aligned}\]
+
+Q: do we need a process model for the forcings \(s\)?
+
+\(f_h\) is a function over some inconvenient domains, which are continuous.
+We are deep in functional analysis now.
+We can try to make them more convenient by discretizing them, which is what MODFLOW itself does.
+This feels unsatisfactory because we want to as much as possible avoid needing to come up with a large object to store in memory and compute over — this is why MODFLOW has problems itself.
+
+So how do we approximate this baby?
+
+## First pass: GP loss surface
+
+Every grid cell param is an unknown parameter $p$.
+(hundreds up to millions.)
+Each stress period of MODFLOW is an observation, so $n$ is small.
+
+## Second pass: Solve the inverse problem of hydrological param inference
+
+### Proof-of-concept Resnet
+
+Resnets already have an interpretation as PDE solvers; see [Neural nets as dynamical systems](https://danmackinlay.name/notebook/nn_dynamical.html), so this is not a crazy idea.
+We can use standard resnet (i.e. convnet) machinery
+
+* we need to learn a grid of latent parameters, over discrete time, and our solution will be specific to this grid.
+* It is not clear if the model will be identifiable
+* But _possibly_ local sensitivity analysis will tell us if these parameters we have learned are informative
+* But since the outputs are very sparsely observed we suspect ML estimates for example will have many optima some of which might be crazy
+* It is unclear how to regularise the solutions so that the latent parameters correspond to something physical
+
+### Process approximation by GP kernel selection
+
+We will learn the covariance kernel jointly between all parameters, which will be stacked into a single x vector, with respect to the output variable of observed head.
+Input space is vectors of $(x,y,val,type)$.
+One problem here is that this does not predict; it merely interpolates.
+OTOH, if we combine this with inducing point methods, we still have some hope of recovering some kind of map of the unobserved params.
+
+$$
+h(x,t)\sim\mathcal{GP}(\boldsymbol{0}, K_{xt,xt})
+$$
+
+The parameters are the latent head covariance kernel parameters.
+Every well at every timestep is an observation.
+$n$ is very large.
+
+## SDE Approximation
+
+The parameters are the evolution equations of SDEs.
+Each time step of MODFLOW is an observation, so $n$ is large.
+
+The latent space kernel has some kind of parameterisation.
+
+## Third pass: Predict observations by smoothing alone
+
+OK, this should surely be a GP.
+
+
+## Simulation-based inference
+
+Learn the parameters of the sim by some kind of likelihood-free inference.
+
+## Learning PDEs with probabilistic nets
+
+We know that we can do good model posterior predictives by ensembling
+
+### Observation approximation by GP
+
+We blindly learn a covariance kernel which is some kind of multi-output mapping to parameters to observed head.
+Input space is vectors of $(x,y,val,type)$.
+One problem here is that this does not predict; it merely interpolates.
+
+$$
+h(x,t)\sim\mathcal{GP}(\boldsymbol{0}, K_{xt,xt})
+$$
+
+The parameters are the latent head covariance kernel parameters.
+Every well at every timestep is an observation.
+$n$ is very large.
+
+## misc notes
+
+Boundary conditions obs
+modelled heads
+latent heads
+
+can we fine the variogram?
+can we learn the local loss surface?
+uncertainties?
+sensitivies?
+

@@ -12,7 +12,7 @@ ignoreFiles:
   - \.knit\.md$
   - \.utf8\.md$
 permalinks:
-  post: /:slug/
+  post: /:year/:month/:day/:slug/
   page: /:slug/
 menu:
   main:

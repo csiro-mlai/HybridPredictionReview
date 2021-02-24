@@ -1,0 +1,32 @@
+---
+title: Hydrology Meeting notes
+author: Dan MacKinlay
+date: '2021-02-24'
+slug: meeting-notes
+categories: []
+tags: []
+nocite:
+- '@*'
+bibliography: refs.bib
+---
+
+# Present
+
+* Dan Pagendam
+* Tao Cui
+* Dan MacKinlay
+
+# Since last time
+
+* Dan M ran a reading group on Physics informed NNs under undertainty [@RaissiPhysicsinformed2019; @ZhangQuantifying2019]
+* Consolidated all notes into a repository [https://github.com/csiro-mlai/HybridPredictionReview/](https://github.com/csiro-mlai/HybridPredictionReview/)
+* Published online at [csiro-mlai.github.io/HybridPredictionReview/](https://csiro-mlai.github.io/HybridPredictionReview/)
+
+## Discussions
+
+Tao on Ensembling and subspace methods [@SiadeSnapshot2010; @TonkinCalibrationconstrained2009; @WhiteModelindependent2018]
+
+## Next steps
+
+* Dan M: Non-stationary inference methods investigation, e.g. @LiuStatistical2020
+* Dan P: Hydrology data

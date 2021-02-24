@@ -1,0 +1,155 @@
+---
+nocite:
+- '@*'
+bibliography: groundwater_emulation.bib
+link-citations: true
+title: Groundwater emulation
+slug: groundwater_emulation
+date: 2021-02-24T21:13:14-05:00
+---
+
+
+
+<div id="translation-dictionary" class="section level2">
+<h2>Translation dictionary</h2>
+<dl>
+<dt>stress period</dt>
+<dd>time series
+</dd>
+<dt>stress</dt>
+<dd>external signal
+</dd>
+</dl>
+</div>
+<div id="a-graphical-emulation-model" class="section level2">
+<h2>A graphical emulation model</h2>
+<dl>
+<dt><span class="math inline">\(\mathcal{D}\)</span></dt>
+<dd>spatial domain
+</dd>
+<dt><span class="math inline">\(\mathcal{L}_h(x)\)</span></dt>
+<dd>some small spatial neighbourhood of <span class="math inline">\(x\)</span>, <span class="math inline">\(\{x&#39;:\|x&#39;-x\|&lt;h\}\)</span>
+</dd>
+<dt><span class="math inline">\(\mathcal{H}_{\ell}(t)\)</span></dt>
+<dd>some small temporal history of <span class="math inline">\(t,\)</span> <span class="math inline">\(\{t&#39;:\ell-t\leq t&#39;&lt;t\}\)</span>
+</dd>
+<dt><span class="math inline">\(s\)</span></dt>
+<dd>Forcings (or stresses) represent input flows, <span class="math inline">\(s=s(t)\)</span>
+</dd>
+<dt><span class="math inline">\(v\)</span></dt>
+<dd>observed forcings, <span class="math inline">\(v = s+\epsilon_{s}\)</span>
+</dd>
+<dt><span class="math inline">\(w\)</span></dt>
+<dd>Latent head values (a latent field of water).
+</dd>
+<dt><span class="math inline">\(j\)</span></dt>
+<dd>Observed heads, <span class="math inline">\(j = w+\epsilon_{w}\)</span>
+</dd>
+<dt><span class="math inline">\(u\)</span></dt>
+<dd>latent hydraulic conductivity field
+</dd>
+<dt><span class="math inline">\(\eta\)</span></dt>
+<dd>process modeling noise?
+</dd>
+</dl>
+<p>Our notional process model is something like</p>
+<p><span class="math display">\[\begin{aligned}
+w(x,t) &amp;=  f_h(\\
+  &amp;\qquad \{w(x&#39;,t&#39;);x&#39;\in \mathcal{L}(x), t&#39;\in \mathcal{H}(t), \\
+  &amp;\qquad\{s(x,t);x&#39;\in \mathcal{L}(x), t&#39;\in \mathcal{H}(t)\}, \\
+  &amp;\qquad\{u(x&#39;); x&#39;\in \mathcal{L}(x)\},
+  )\\
+u(x)&amp;\sim \mathcal{N}(\mu_x, K_{xx})
+\end{aligned}\]</span></p>
+<p>Q: do we need a process model for the forcings <span class="math inline">\(s\)</span>?</p>
+<p><span class="math inline">\(f_h\)</span> is a function over some inconvenient domains, which are continuous.
+We are deep in functional analysis now.
+We can try to make them more convenient by discretizing them, which is what MODFLOW itself does.
+This feels unsatisfactory because we want to as much as possible avoid needing to come up with a large object to store in memory and compute over — this is why MODFLOW has problems itself.</p>
+<p>So how do we approximate this baby?</p>
+</div>
+<div id="first-pass-gp-loss-surface" class="section level2">
+<h2>First pass: GP loss surface</h2>
+<p>Every grid cell param is an unknown parameter <span class="math inline">\(p\)</span>.
+(hundreds up to millions.)
+Each stress period of MODFLOW is an observation, so <span class="math inline">\(n\)</span> is small.</p>
+</div>
+<div id="second-pass-solve-the-inverse-problem-of-hydrological-param-inference" class="section level2">
+<h2>Second pass: Solve the inverse problem of hydrological param inference</h2>
+<div id="proof-of-concept-resnet" class="section level3">
+<h3>Proof-of-concept Resnet</h3>
+<p>Resnets already have an interpretation as PDE solvers; see <a href="https://danmackinlay.name/notebook/nn_dynamical.html">Neural nets as dynamical systems</a>, so this is not a crazy idea.
+We can use standard resnet (i.e. convnet) machinery</p>
+<ul>
+<li>we need to learn a grid of latent parameters, over discrete time, and our solution will be specific to this grid.</li>
+<li>It is not clear if the model will be identifiable</li>
+<li>But <em>possibly</em> local sensitivity analysis will tell us if these parameters we have learned are informative</li>
+<li>But since the outputs are very sparsely observed we suspect ML estimates for example will have many optima some of which might be crazy</li>
+<li>It is unclear how to regularise the solutions so that the latent parameters correspond to something physical</li>
+</ul>
+</div>
+<div id="process-approximation-by-gp-kernel-selection" class="section level3">
+<h3>Process approximation by GP kernel selection</h3>
+<p>We will learn the covariance kernel jointly between all parameters, which will be stacked into a single x vector, with respect to the output variable of observed head.
+Input space is vectors of <span class="math inline">\((x,y,val,type)\)</span>.
+One problem here is that this does not predict; it merely interpolates.
+OTOH, if we combine this with inducing point methods, we still have some hope of recovering some kind of map of the unobserved params.</p>
+<p><span class="math display">\[
+h(x,t)\sim\mathcal{GP}(\boldsymbol{0}, K_{xt,xt})
+\]</span></p>
+<p>The parameters are the latent head covariance kernel parameters.
+Every well at every timestep is an observation.
+<span class="math inline">\(n\)</span> is very large.</p>
+</div>
+</div>
+<div id="sde-approximation" class="section level2">
+<h2>SDE Approximation</h2>
+<p>The parameters are the evolution equations of SDEs.
+Each time step of MODFLOW is an observation, so <span class="math inline">\(n\)</span> is large.</p>
+<p>The latent space kernel has some kind of parameterisation.</p>
+</div>
+<div id="third-pass-predict-observations-by-smoothing-alone" class="section level2">
+<h2>Third pass: Predict observations by smoothing alone</h2>
+<p>OK, this should surely be a GP.</p>
+</div>
+<div id="simulation-based-inference" class="section level2">
+<h2>Simulation-based inference</h2>
+<p>Learn the parameters of the sim by some kind of likelihood-free inference.</p>
+</div>
+<div id="learning-pdes-with-probabilistic-nets" class="section level2">
+<h2>Learning PDEs with probabilistic nets</h2>
+<p>We know that we can do good model posterior predictives by ensembling</p>
+<div id="observation-approximation-by-gp" class="section level3">
+<h3>Observation approximation by GP</h3>
+<p>We blindly learn a covariance kernel which is some kind of multi-output mapping to parameters to observed head.
+Input space is vectors of <span class="math inline">\((x,y,val,type)\)</span>.
+One problem here is that this does not predict; it merely interpolates.</p>
+<p><span class="math display">\[
+h(x,t)\sim\mathcal{GP}(\boldsymbol{0}, K_{xt,xt})
+\]</span></p>
+<p>The parameters are the latent head covariance kernel parameters.
+Every well at every timestep is an observation.
+<span class="math inline">\(n\)</span> is very large.</p>
+</div>
+</div>
+<div id="misc-notes" class="section level2">
+<h2>misc notes</h2>
+<p>Boundary conditions obs
+modelled heads
+latent heads</p>
+<p>can we fine the variogram?
+can we learn the local loss surface?
+uncertainties?
+sensitivies?</p>
+<div id="refs" class="references">
+<div id="ref-hadash2018estimate">
+<p>Hadash, Guy, Einat Kermany, Boaz Carmeli, Ofer Lavi, George Kour, and Alon Jacovi. 2018. “Estimate and Replace: A Novel Approach to Integrating Deep Neural Networks with Existing Applications.” <em>arXiv Preprint arXiv:1804.09028</em>.</p>
+</div>
+<div id="ref-kour2014fast">
+<p>Kour, George, and Raid Saabne. 2014a. “Fast Classification of Handwritten on-Line Arabic Characters.” In <em>Soft Computing and Pattern Recognition (Socpar), 2014 6th International Conference of</em>, 312–18. IEEE.</p>
+</div>
+<div id="ref-kour2014real">
+<p>———. 2014b. “Real-Time Segmentation of on-Line Handwritten Arabic Script.” In <em>Frontiers in Handwriting Recognition (Icfhr), 2014 14th International Conference on</em>, 417–22. IEEE.</p>
+</div>
+</div>
+</div>

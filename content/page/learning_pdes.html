@@ -1,130 +1,75 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.78.2" />
-
-
-<title>Learning PDEs - A Hugo website</title>
-<meta property="og:title" content="Learning PDEs - A Hugo website">
-
-
-  <link href='https://csiro-mlai.github.io/HybridPredictionReview/favicon.ico' rel='icon' type='image/x-icon'/>
+---
+nocite:
+- '@*'
+bibliography: learning_pdes.bib
+link-citations: true
+title: Learning PDEs
+slug: learning_pdes
+date: 2021-02-24T21:13:14-05:00
+---
 
 
 
-  
-
-
-
-
-
-
-
-
-<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
-
-
-
-<link rel="stylesheet" href="/HybridPredictionReview/css/fonts.css" media="all">
-<link rel="stylesheet" href="/HybridPredictionReview/css/main.css" media="all">
-
-
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-  <a href="/HybridPredictionReview/" class="nav-logo">
-    <img src="/HybridPredictionReview/images/logo.png"
-         width="50"
-         height="50"
-         alt="Logo">
-  </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/HybridPredictionReview/about/">About</a></li>
-    
-  </ul>
-</nav>
-
-      </header>
-
-
-<main class="content" role="main">
-
-  <article class="article">
-    
-
-    <h1 class="article-title">Learning PDEs</h1>
-
-    
-
-    <div class="article-content">
-      
-
-
-<div id="learning-pdes" class="section level1">
-<h1>Learning PDEs</h1>
 <p>Various research directions in learning approximations to (S)PDEs</p>
 <p>For now, this is a scratch pad to think through some connections, ideas and shortcomings of current approaches.</p>
 <p>I’m writing this in markdown, but we could totally do it in LaTeX or RMarkdown if people are into that.</p>
-<div id="problems-to-solve" class="section level2">
-<h2>Problems to solve</h2>
-<div id="computational-efficiency" class="section level3">
-<h3>Computational efficiency</h3>
-<p>PDE solvers are often slow</p>
+<div id="problems-to-solve" class="section level1">
+<h1>Problems to solve</h1>
+<div id="computational-efficiency" class="section level2">
+<h2>Computational efficiency</h2>
+<p>PDE solvers are often slow, and inference is fast with a NN.</p>
+<p>However we need to be careful about conditioning; If we out neural networl is not conditional upon parameters but must be retrained between parameter updates it is probably no longer fast. Unlike inference, training is not fast.</p>
 </div>
-<div id="learning-latent-fields" class="section level3">
-<h3>Learning latent fields</h3>
+<div id="learning-latent-fields" class="section level2">
+<h2>Learning latent fields</h2>
+<p>Learning forcings and geophysical perperties. TBD.</p>
 </div>
-<div id="learning-parameters" class="section level3">
-<h3>Learning parameters</h3>
+<div id="learning-parameters" class="section level2">
+<h2>Learning parameters</h2>
+<p>If we are convinced our PDE is accurate, and can be bothered implementing it in a neural net, we can estimate parameters - see <a href="#pinn">PINNs</a></p>
 </div>
-<div id="interpolating" class="section level3">
-<h3>Interpolating</h3>
+<div id="interpolating" class="section level2">
+<h2>Interpolating</h2>
 <p>An obvious way to start it to learn a PDE over a grid or mesh.
 This is unsatisfactory for a variety of reasons (large GPU memory requirement, scale-dependent.)
 Can we move from grid coordinates to continuous space/time?</p>
 </div>
-<div id="generalisationconditionalisation" class="section level3">
-<h3>Generalisation/conditionalisation</h3>
+<div id="generalisationconditionalisation" class="section level2">
+<h2>Generalisation/conditionalisation</h2>
 <p>We would like to learn solutions that</p>
 </div>
 </div>
-<div id="tools" class="section level2">
-<h2>Tools</h2>
-<div id="dropout" class="section level3">
-<h3>Dropout</h3>
+<div id="tools" class="section level1">
+<h1>Tools</h1>
+<div id="dropout" class="section level2">
+<h2>Dropout</h2>
 <p>Dropout gives me a kinda-sorta posterior predictive density for a given NN model.
 How does this propagate through timesteps in a forward-PDE model?</p>
 <p><span class="citation">Foong et al. (<a href="#ref-FoongPathologies2019" role="doc-biblioref">2019</a>)</span>; <span class="citation">Gal, Hron, and Kendall (<a href="#ref-GalConcrete2017" role="doc-biblioref">2017</a>)</span>; <span class="citation">Gal and Ghahramani (<a href="#ref-GalDropout2015" role="doc-biblioref">2015</a>)</span></p>
 </div>
-<div id="chaos-expansion" class="section level3">
-<h3>Chaos expansion</h3>
+<div id="chaos-expansion" class="section level2">
+<h2>Chaos expansion</h2>
 <p>Learning a basis expansion for an approximate SDE</p>
 </div>
-<div id="pinn" class="section level3">
-<h3>PINN</h3>
+<div id="pinn" class="section level2">
+<h2>PINN</h2>
 <p>Physics-informed neural nets, an ”implicit” representation method, give us rapid neural networks.
 See <a href="https://danmackinlay.name/notebook/ml_pde.html#learning-a-pde">PINNs</a>.</p>
 </div>
-<div id="generic-operator-learning" class="section level3">
-<h3>Generic operator learning</h3>
+<div id="generic-operator-learning" class="section level2">
+<h2>Generic operator learning</h2>
 <p>See, e.g. <a href="https://danmackinlay.name/notebook/ml_pde.html#fourier-neural-operator">Fourier neural operators</a>.</p>
 <p>These seem favourable in that they learn rapid approximations to PDEs. However, it is unclear how to conduct an error analysis upon them or do general inference.</p>
 </div>
 </div>
-<div id="to-build-this-document" class="section level2">
-<h2>To build this document</h2>
-<p>This markdown document renders using <a href="https://pandoc.org/">pandoc</a> with the following command:</p>
-<pre class="bash"><code>pandoc -s --citeproc README.md -o README.html</code></pre>
+<div id="parameters" class="section level1">
+<h1>Parameters</h1>
+<p>Material parameters.</p>
+<p>Forcings.</p>
+<p>Responses.</p>
 </div>
-<div id="references" class="section level2">
-<h2>References</h2>
+<div id="references" class="section level1">
+<h1>References</h1>
 <div id="refs">
 <div id="ref-AltosaarHierarchical2019">
 <p>Altosaar, Jaan, Rajesh Ranganath, and Kyle Cranmer. 2019. “Hierarchical Variational Models for Statistical Physics.” In <em>NeurIPS</em>, 5.</p>
@@ -344,46 +289,3 @@ See <a href="https://danmackinlay.name/notebook/ml_pde.html#learning-a-pde">PINN
 </div>
 </div>
 </div>
-</div>
-
-    </div>
-  </article>
-
-  
-
-
-</main>
-
-      <footer class="footer">
-        <ul class="footer-links">
-          <li>
-            <a href="/HybridPredictionReview/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
-          </li>
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/HybridPredictionReview/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
-
-    </div>
-    
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-
-
-
-    
-
-    
-  </body>
-</html>
-
