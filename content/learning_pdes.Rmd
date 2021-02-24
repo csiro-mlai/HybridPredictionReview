@@ -65,13 +65,13 @@ See, e.g. [Fourier neural operators](https://danmackinlay.name/notebook/ml_pde.h
 
 These seem favourable in that they learn rapid approximations to PDEs. However, it is unclear how to conduct an error analysis upon them or do general inference.
 
-## To build this document
+## Parameters
 
-This markdown document renders using [pandoc](https://pandoc.org/) with the following command:
+Material parameters.
 
-```bash
-pandoc -s --citeproc README.md -o README.html
-```
+Forcings.
+
+Responses.
 
 ## References
 
