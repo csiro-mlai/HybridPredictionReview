@@ -1,7 +1,7 @@
 baseurl: https://csiro-mlai.github.io/HybridPredictionReview/
 languageCode: en-us
 publishDir: docs/
-title: A Hugo website
+title: Hybrid prediction notes
 theme: hugo-lithium
 googleAnalytics: ''
 disqusShortname: ''
