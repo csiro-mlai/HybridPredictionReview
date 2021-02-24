@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on A Hugo website</title>
+    <title>Posts on Hybrid prediction notes</title>
     <link>https://csiro-mlai.github.io/HybridPredictionReview/post/</link>
-    <description>Recent content in Posts on A Hugo website</description>
+    <description>Recent content in Posts on Hybrid prediction notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://csiro-mlai.github.io/HybridPredictionReview/post/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/02/24/meeting-notes/</guid>
-      <description>Present  Dan Pagendam Tao Cui Dan MacKinlay   Since last time  Dan M ran a reading group on Physics informed NNs under undertainty (Raissi, Perdikaris, and Karniadakis 2019; Zhang et al. 2019) Consolidated all notes into a repository https://github.com/csiro-mlai/HybridPredictionReview/ Published online at csiro-mlai.github.io/HybridPredictionReview/  Discussions Tao on Ensembling and subspace methods (Siade, Putti, and Yeh 2010; Tonkin and Doherty 2009; White 2018)
+      <description>Present  Dan Pagendam Tao Cui Dan MacKinlay   Since last time  Dan M ran a reading group on Physics informed NNs under undertainty (Raissi, Perdikaris, and Karniadakis 2019; Zhang et al. 2019) Consolidated all notes into a repository https://github.com/csiro-mlai/HybridPredictionReview/ Published online at csiro-mlai.github.io/HybridPredictionReview/   Discussions Tao on Ensembling and subspace methods (Siade, Putti, and Yeh 2010; Tonkin and Doherty 2009; White 2018)
  Next steps  Dan M: Non-stationary inference methods investigation, e.</description>
     </item>
     

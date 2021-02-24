@@ -16,8 +16,10 @@ permalinks:
   page: /:slug/
 menu:
   main:
-    - name: About
-      url: /about/
+    - name: Learning PDEs
+      url: /page/learning_pdes.
+    - name: Groundwater Emultation
+      url: /page/groundwater_emulation/
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

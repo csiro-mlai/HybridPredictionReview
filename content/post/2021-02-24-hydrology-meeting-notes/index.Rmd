@@ -22,11 +22,18 @@ bibliography: refs.bib
 * Consolidated all notes into a repository [https://github.com/csiro-mlai/HybridPredictionReview/](https://github.com/csiro-mlai/HybridPredictionReview/)
 * Published online at [csiro-mlai.github.io/HybridPredictionReview/](https://csiro-mlai.github.io/HybridPredictionReview/)
 
-## Discussions
+#  Discussions
 
 Tao on Ensembling and subspace methods [@SiadeSnapshot2010; @TonkinCalibrationconstrained2009; @WhiteModelindependent2018]
 
-## Next steps
+# Next steps
 
 * Dan M: Non-stationary inference methods investigation, e.g. @LiuStatistical2020
 * Dan P: Hydrology data
+# References
+
+# References
+
+::: {#refs}
+:::
+
