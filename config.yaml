@@ -13,6 +13,7 @@ ignoreFiles:
   - \.utf8\.md$
 permalinks:
   post: /:slug/
+  page: /:slug/
 menu:
   main:
     - name: About
