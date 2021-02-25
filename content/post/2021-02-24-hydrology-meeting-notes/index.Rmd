@@ -30,7 +30,6 @@ Tao on Ensembling and subspace methods [@SiadeSnapshot2010; @TonkinCalibrationco
 
 * Dan M: Non-stationary inference methods investigation, e.g. @LiuStatistical2020
 * Dan P: Hydrology data
-# References
 
 # References
 
