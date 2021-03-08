@@ -1,5 +1,5 @@
 ---
-title: Hydrology Meeting notes
+title: Hydrology meeting notes
 author: Dan MacKinlay
 date: '2021-03-10'
 slug: meeting-notes
@@ -12,13 +12,20 @@ bibliography: refs.bib
 
 # Present
 
+* Dan MacKinlay
+* …
 
 # Since last time
 
-Dan has been attempting to reduce the 
+Dan has been reviewing alternative techniques from the literature for non-stationary PDEs
+
+* _Weak_ formulation @BaoNumerical2020; @ZangWeak2020
+* Basis decomposition @SigristStochastic2015; @LiuStatistical2020; @LiFourier2020, which is apparently especially useful for advection-diffusion equations
 
 #  Discussions
 
+* can we get gradient out of MODFLOW sims?
+* how close to advection-diffusion are we in groundwater?
 
 # Next steps
 

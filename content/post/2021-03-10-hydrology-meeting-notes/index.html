@@ -1,8 +1,8 @@
 ---
-title: Hydrology Meeting notes
+title: Hydrology meeting notes
 author: Dan MacKinlay
 date: '2021-03-10'
-slug: meeting-notes
+slug: 'meeting-notes-2'
 categories: []
 tags: []
 nocite:
@@ -14,13 +14,25 @@ bibliography: refs.bib
 
 <div id="present" class="section level1">
 <h1>Present</h1>
+<ul>
+<li>Dan MacKinlay</li>
+<li>…</li>
+</ul>
 </div>
 <div id="since-last-time" class="section level1">
 <h1>Since last time</h1>
-<p>Dan has been attempting to reduce the</p>
+<p>Dan has been reviewing alternative techniques from the literature for non-stationary PDEs</p>
+<ul>
+<li><em>Weak</em> formulation <span class="citation">Bao et al. (<a href="#ref-BaoNumerical2020" role="doc-biblioref">2020</a>)</span>; <span class="citation">Zang et al. (<a href="#ref-ZangWeak2020" role="doc-biblioref">2020</a>)</span></li>
+<li>Basis decomposition <span class="citation">Sigrist, Künsch, and Stahel (<a href="#ref-SigristStochastic2015" role="doc-biblioref">2015</a>)</span>; <span class="citation">Liu, Yeo, and Lu (<a href="#ref-LiuStatistical2020" role="doc-biblioref">2020</a>)</span>; <span class="citation">Li et al. (<a href="#ref-LiFourier2020" role="doc-biblioref">2020</a>)</span>, which is apparently especially useful for advection-diffusion equations</li>
+</ul>
 </div>
 <div id="discussions" class="section level1">
 <h1>Discussions</h1>
+<ul>
+<li>can we get gradient out of MODFLOW sims?</li>
+<li>how close to advection-diffusion are we in groundwater?</li>
+</ul>
 </div>
 <div id="next-steps" class="section level1">
 <h1>Next steps</h1>
@@ -37,6 +49,9 @@ bibliography: refs.bib
 <div id="ref-LeeMarkov2002">
 <p>Lee, Herbert K. H., Dave M. Higdon, Zhuoxin Bi, Marco A. R. Ferreira, and Mike West. 2002. “Markov Random Field Models for High-Dimensional Parameters in Simulations of Fluid Flow in Porous Media.” <em>Technometrics</em> 44 (3): 230–41. <a href="https://doi.org/10.1198/004017002188618419">https://doi.org/10.1198/004017002188618419</a>.</p>
 </div>
+<div id="ref-LiFourier2020">
+<p>Li, Zongyi, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar. 2020. “Fourier Neural Operator for Parametric Partial Differential Equations.” <em>arXiv:2010.08895 [Cs, Math]</em>, October. <a href="http://arxiv.org/abs/2010.08895">http://arxiv.org/abs/2010.08895</a>.</p>
+</div>
 <div id="ref-LindgrenExplicit2011">
 <p>Lindgren, Finn, Håvard Rue, and Johan Lindström. 2011. “An Explicit Link Between Gaussian Fields and Gaussian Markov Random Fields: The Stochastic Partial Differential Equation Approach.” <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> 73 (4): 423–98. <a href="https://doi.org/10.1111/j.1467-9868.2011.00777.x">https://doi.org/10.1111/j.1467-9868.2011.00777.x</a>.</p>
 </div>
@@ -52,8 +67,14 @@ bibliography: refs.bib
 <div id="ref-ScharfProcess2017">
 <p>Scharf, Henry R., Mevin B. Hooten, Devin S. Johnson, and John W. Durban. 2017. “Process Convolution Approaches for Modeling Interacting Trajectories.” <em>arXiv:1703.02112 [Stat]</em>, November. <a href="http://arxiv.org/abs/1703.02112">http://arxiv.org/abs/1703.02112</a>.</p>
 </div>
+<div id="ref-SigristStochastic2015">
+<p>Sigrist, Fabio, Hans R. Künsch, and Werner A. Stahel. 2015. “Stochastic Partial Differential Equation Based Modelling of Large Space-Time Data Sets.” <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> 77 (1): 3–33. <a href="https://doi.org/10.1111/rssb.12061">https://doi.org/10.1111/rssb.12061</a>.</p>
+</div>
 <div id="ref-YangPhysicsInformed2020">
 <p>Yang, Liu, Dongkun Zhang, and George Em Karniadakis. 2020. “Physics-Informed Generative Adversarial Networks for Stochastic Differential Equations.” <em>SIAM Journal on Scientific Computing</em> 42 (1): A292–A317. <a href="https://doi.org/10.1137/18M1225409">https://doi.org/10.1137/18M1225409</a>.</p>
+</div>
+<div id="ref-ZangWeak2020">
+<p>Zang, Yaohua, Gang Bao, Xiaojing Ye, and Haomin Zhou. 2020. “Weak Adversarial Networks for High-Dimensional Partial Differential Equations.” <em>Journal of Computational Physics</em> 411 (June): 109409. <a href="https://doi.org/10.1016/j.jcp.2020.109409">https://doi.org/10.1016/j.jcp.2020.109409</a>.</p>
 </div>
 </div>
 </div>
