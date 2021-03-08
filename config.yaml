@@ -18,7 +18,7 @@ menu:
   main:
     - name: Learning PDEs
       url: /page/learning_pdes.
-    - name: Groundwater Emultation
+    - name: Groundwater emulation
       url: /page/groundwater_emulation/
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs

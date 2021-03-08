@@ -1,0 +1,30 @@
+---
+title: Hydrology Meeting notes
+author: Dan MacKinlay
+date: '2021-03-10'
+slug: meeting-notes
+categories: []
+tags: []
+nocite:
+- '@*'
+bibliography: refs.bib
+---
+
+# Present
+
+
+# Since last time
+
+Dan has been attempting to reduce the 
+
+#  Discussions
+
+
+# Next steps
+
+
+# References
+
+::: {#refs}
+:::
+

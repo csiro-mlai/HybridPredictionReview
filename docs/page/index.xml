@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Hybrid prediction notes</title>
+    <link>https://csiro-mlai.github.io/HybridPredictionReview/page/</link>
+    <description>Recent content in Pages on Hybrid prediction notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Feb 2021 21:13:14 -0500</lastBuildDate><atom:link href="https://csiro-mlai.github.io/HybridPredictionReview/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Groundwater emulation</title>
+      <link>https://csiro-mlai.github.io/HybridPredictionReview/groundwater_emulation/</link>
+      <pubDate>Wed, 24 Feb 2021 21:13:14 -0500</pubDate>
+      
+      <guid>https://csiro-mlai.github.io/HybridPredictionReview/groundwater_emulation/</guid>
+      <description>Translation dictionary  stress period time series  stress external signal    A graphical emulation model  \(\mathcal{D}\) spatial domain  \(\mathcal{L}_h(x)\) some small spatial neighbourhood of \(x\), \(\{x&amp;#39;:\|x&amp;#39;-x\|&amp;lt;h\}\)  \(\mathcal{H}_{\ell}(t)\) some small temporal history of \(t,\) \(\{t&amp;#39;:\ell-t\leq t&amp;#39;&amp;lt;t\}\)  \(s\) Forcings (or stresses) represent input flows, \(s=s(t)\)  \(v\) observed forcings, \(v = s+\epsilon_{s}\)  \(w\) Latent head values (a latent field of water).  \(j\) Observed heads, \(j = w+\epsilon_{w}\)  \(u\) latent hydraulic conductivity field  \(\eta\) process modeling noise?</description>
+    </item>
+    
+    <item>
+      <title>Learning PDEs</title>
+      <link>https://csiro-mlai.github.io/HybridPredictionReview/learning_pdes/</link>
+      <pubDate>Wed, 24 Feb 2021 21:13:14 -0500</pubDate>
+      
+      <guid>https://csiro-mlai.github.io/HybridPredictionReview/learning_pdes/</guid>
+      <description>Various research directions in learning approximations to (S)PDEs
+For now, this is a scratch pad to think through some connections, ideas and shortcomings of current approaches.
+I’m writing this in markdown, but we could totally do it in LaTeX or RMarkdown if people are into that.
+Problems to solve Computational efficiency PDE solvers are often slow, and inference is fast with a NN.
+However we need to be careful about conditioning; If we out neural networl is not conditional upon parameters but must be retrained between parameter updates it is probably no longer fast.</description>
+    </item>
+    
+  </channel>
+</rss>
