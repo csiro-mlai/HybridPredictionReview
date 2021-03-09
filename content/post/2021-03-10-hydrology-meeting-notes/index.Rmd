@@ -24,10 +24,13 @@ Dan has been reviewing alternative techniques from the literature for non-statio
 
 #  Discussions
 
-* can we get gradient out of MODFLOW sims?
-* how close to advection-diffusion are we in groundwater?
-* New training data set: can we get data set of groundwater sims with forcings and latent parameters for supervised learning?
+* Dan Questions
 
+  * can we get gradient out of MODFLOW sims?
+  * how close to advection-diffusion are we in groundwater?
+  * New training data set: can we get data set of groundwater sims with forcings and latent parameters for supervised learning?
+  * Meta learning: can we learn a good set of models
+  * Is there a reason that plain old MCMC won't work here?
 # Next steps
 
 

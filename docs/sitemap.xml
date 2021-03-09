@@ -1,43 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://csiro-mlai.github.io/HybridPredictionReview/groundwater_emulation/</loc>
-    <lastmod>2021-02-24T21:13:14-05:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://csiro-mlai.github.io/HybridPredictionReview/</loc>
+    <lastmod>2021-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/24/meeting-notes/</loc>
+    <lastmod>2021-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://csiro-mlai.github.io/HybridPredictionReview/post/</loc>
+    <lastmod>2021-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/10/meeting-notes/</loc>
+    <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://csiro-mlai.github.io/HybridPredictionReview/groundwater_emulation/</loc>
     <lastmod>2021-02-24T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://csiro-mlai.github.io/HybridPredictionReview/learning_pdes/</loc>
     <lastmod>2021-02-24T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://csiro-mlai.github.io/HybridPredictionReview/page/</loc>
     <lastmod>2021-02-24T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://csiro-mlai.github.io/HybridPredictionReview/2021/02/24/meeting-notes/</loc>
     <lastmod>2021-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://csiro-mlai.github.io/HybridPredictionReview/post/</loc>
-    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://csiro-mlai.github.io/HybridPredictionReview/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://csiro-mlai.github.io/HybridPredictionReview/tags/</loc>
   </url>
-  
 </urlset>

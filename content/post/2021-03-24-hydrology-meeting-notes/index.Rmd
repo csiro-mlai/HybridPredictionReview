@@ -1,5 +1,5 @@
 ---
-title: Meeting notes
+title: Hydrology meeting notes
 author: Dan MacKinlay
 date: '2021-03-24'
 slug: meeting-notes
@@ -10,4 +10,11 @@ nocite:
 bibliography: refs.bib
 ---
 
-Test
+Test.
+
+
+# References
+
+::: {#refs}
+:::
+

@@ -6,7 +6,28 @@
     <description>Recent content on Hybrid prediction notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Feb 2021 21:13:14 -0500</lastBuildDate><atom:link href="https://csiro-mlai.github.io/HybridPredictionReview/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://csiro-mlai.github.io/HybridPredictionReview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hydrology meeting notes</title>
+      <link>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/24/meeting-notes/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/24/meeting-notes/</guid>
+      <description> Test.
+References   </description>
+    </item>
+    
+    <item>
+      <title>Hydrology meeting notes</title>
+      <link>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/10/meeting-notes/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/10/meeting-notes/</guid>
+      <description>Present  Dan MacKinlay …   Since last time Dan has been reviewing alternative techniques from the literature for non-stationary PDEs
+ Weak formulation Bao et al. (2020); Zang et al. (2020) Basis decomposition Sigrist, Künsch, and Stahel (2015); Liu, Yeo, and Lu (2020); Li et al. (2020), which is apparently especially useful for advection-diffusion equations   Discussions  Dan Questions
+ can we get gradient out of MODFLOW sims?</description>
+    </item>
+    
     <item>
       <title>Groundwater emulation</title>
       <link>https://csiro-mlai.github.io/HybridPredictionReview/groundwater_emulation/</link>
