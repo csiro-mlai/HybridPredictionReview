@@ -13,26 +13,32 @@ bibliography: refs.bib
 # Present
 
 * Dan MacKinlay
-* …
+* Petra Kuhnert
+* Dan Pagenden
 
 # Since last time
 
 Dan has been reviewing alternative techniques from the literature for non-stationary PDEs
 
-* _Weak_ formulation @BaoNumerical2020; @ZangWeak2020
-* Basis decomposition @SigristStochastic2015; @LiuStatistical2020; @LiFourier2020, which is apparently especially useful for advection-diffusion equations
+* _Weak_ formulation @BaoNumerical2020; @ZangWeak2020. This is very clever, but does not solve the problem that it is hard to use the “implicit representation” output, and it is hard to see how it could generalise to multiple problems.
+* Basis decomposition @SigristStochastic2015; @LiuStatistical2020; @LiFourier2020, which is apparently especially useful for advection-diffusion equations.
+  This looks much more useful. The most basic basis choice (Fourier) is probably an easy choice.
 
 #  Discussions
 
-* Dan Questions
+* Dan M Questions (partly deferred to next week)
 
   * can we get gradient out of MODFLOW sims?
   * how close to advection-diffusion are we in groundwater?
   * New training data set: can we get data set of groundwater sims with forcings and latent parameters for supervised learning?
-  * Meta learning: can we learn a good set of models
-  * Is there a reason that plain old MCMC won't work here?
+  * Meta learning: can we learn a good set of models? (Petra also has this question)
+  * Is there a reason that plain old MCMC won't work here? Is it just too slow?
+  
 # Next steps
 
+* Try model emulation with forcing held constant across a low-dim representation of the latent parameters
+* try to get generic PDE solver to output plausible PDEs
+* try to get latent factor simulation through an emulated version of the solver
 
 # References
 
