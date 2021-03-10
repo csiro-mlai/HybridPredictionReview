@@ -10,75 +10,85 @@ nocite:
 bibliography: refs.bib
 ---
 
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
 <div id="present" class="section level1">
 <h1>Present</h1>
 <ul>
 <li>Dan MacKinlay</li>
-<li>…</li>
+<li>Petra Kuhnert</li>
+<li>Dan Pagenden</li>
 </ul>
 </div>
 <div id="since-last-time" class="section level1">
 <h1>Since last time</h1>
 <p>Dan has been reviewing alternative techniques from the literature for non-stationary PDEs</p>
 <ul>
-<li><em>Weak</em> formulation <span class="citation">Bao et al. (<a href="#ref-BaoNumerical2020" role="doc-biblioref">2020</a>)</span>; <span class="citation">Zang et al. (<a href="#ref-ZangWeak2020" role="doc-biblioref">2020</a>)</span></li>
-<li>Basis decomposition <span class="citation">Sigrist, Künsch, and Stahel (<a href="#ref-SigristStochastic2015" role="doc-biblioref">2015</a>)</span>; <span class="citation">Liu, Yeo, and Lu (<a href="#ref-LiuStatistical2020" role="doc-biblioref">2020</a>)</span>; <span class="citation">Li et al. (<a href="#ref-LiFourier2020" role="doc-biblioref">2020</a>)</span>, which is apparently especially useful for advection-diffusion equations</li>
+<li><em>Weak</em> formulation <span class="citation"><a href="#ref-BaoNumerical2020" role="doc-biblioref">Bao et al.</a> (<a href="#ref-BaoNumerical2020" role="doc-biblioref">2020</a>)</span>; <span class="citation"><a href="#ref-ZangWeak2020" role="doc-biblioref">Zang et al.</a> (<a href="#ref-ZangWeak2020" role="doc-biblioref">2020</a>)</span>. This is very clever, but does not solve the problem that it is hard to use the “implicit representation” output, and it is hard to see how it could generalise to multiple problems.</li>
+<li>Basis decomposition <span class="citation"><a href="#ref-SigristStochastic2015" role="doc-biblioref">Sigrist, Künsch, and Stahel</a> (<a href="#ref-SigristStochastic2015" role="doc-biblioref">2015</a>)</span>; <span class="citation"><a href="#ref-LiuStatistical2020" role="doc-biblioref">Liu, Yeo, and Lu</a> (<a href="#ref-LiuStatistical2020" role="doc-biblioref">2020</a>)</span>; <span class="citation"><a href="#ref-LiFourier2020" role="doc-biblioref">Li et al.</a> (<a href="#ref-LiFourier2020" role="doc-biblioref">2020</a>)</span>, which is apparently especially useful for advection-diffusion equations.
+This looks much more useful. The most basic basis choice (Fourier) is probably an easy choice.</li>
 </ul>
 </div>
 <div id="discussions" class="section level1">
 <h1>Discussions</h1>
 <ul>
-<li><p>Dan Questions</p>
+<li><p>Dan M Questions (partly deferred to next week)</p>
 <ul>
 <li>can we get gradient out of MODFLOW sims?</li>
 <li>how close to advection-diffusion are we in groundwater?</li>
 <li>New training data set: can we get data set of groundwater sims with forcings and latent parameters for supervised learning?</li>
-<li>Meta learning: can we learn a good set of models</li>
-<li>Is there a reason that plain old MCMC won’t work here?
-# Next steps</li>
+<li>Meta learning: can we learn a good set of models? (Petra also has this question)</li>
+<li>Is there a reason that plain old MCMC won’t work here? Is it just too slow?</li>
 </ul></li>
+</ul>
+</div>
+<div id="next-steps" class="section level1">
+<h1>Next steps</h1>
+<ul>
+<li>Try model emulation with forcing held constant across a low-dim representation of the latent parameters</li>
+<li>try to get generic PDE solver to output plausible PDEs</li>
+<li>try to get latent factor simulation through an emulated version of the solver</li>
 </ul>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>
-<div id="refs">
-<div id="ref-BaoNumerical2020">
-<p>Bao, Gang, Xiaojing Ye, Yaohua Zang, and Haomin Zhou. 2020. “Numerical Solution of Inverse Problems by Weak Adversarial Networks.” <em>Inverse Problems</em> 36 (11): 115003. <a href="https://doi.org/10.1088/1361-6420/abb447">https://doi.org/10.1088/1361-6420/abb447</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-BaoNumerical2020" class="csl-entry">
+Bao, Gang, Xiaojing Ye, Yaohua Zang, and Haomin Zhou. 2020. <span>“Numerical Solution of Inverse Problems by Weak Adversarial Networks.”</span> <em>Inverse Problems</em> 36 (11): 115003. <a href="https://doi.org/10.1088/1361-6420/abb447">https://doi.org/10.1088/1361-6420/abb447</a>.
 </div>
-<div id="ref-HigdonProcessconvolution1998">
-<p>Higdon, David. 1998. “A Process-Convolution Approach to Modelling Temperatures in the North Atlantic Ocean.” <em>Environmental and Ecological Statistics</em> 5 (2): 173–90. <a href="https://doi.org/10.1023/A:1009666805688">https://doi.org/10.1023/A:1009666805688</a>.</p>
+<div id="ref-HigdonProcessconvolution1998" class="csl-entry">
+Higdon, David. 1998. <span>“A Process-Convolution Approach to Modelling Temperatures in the <span>North Atlantic Ocean</span>.”</span> <em>Environmental and Ecological Statistics</em> 5 (2): 173–90. <a href="https://doi.org/10.1023/A:1009666805688">https://doi.org/10.1023/A:1009666805688</a>.
 </div>
-<div id="ref-LeeMarkov2002">
-<p>Lee, Herbert K. H., Dave M. Higdon, Zhuoxin Bi, Marco A. R. Ferreira, and Mike West. 2002. “Markov Random Field Models for High-Dimensional Parameters in Simulations of Fluid Flow in Porous Media.” <em>Technometrics</em> 44 (3): 230–41. <a href="https://doi.org/10.1198/004017002188618419">https://doi.org/10.1198/004017002188618419</a>.</p>
+<div id="ref-LeeMarkov2002" class="csl-entry">
+Lee, Herbert K. H., Dave M. Higdon, Zhuoxin Bi, Marco A. R. Ferreira, and Mike West. 2002. <span>“Markov <span>Random Field Models</span> for <span>High</span>-<span>Dimensional Parameters</span> in <span>Simulations</span> of <span>Fluid Flow</span> in <span>Porous Media</span>.”</span> <em>Technometrics</em> 44 (3): 230–41. <a href="https://doi.org/10.1198/004017002188618419">https://doi.org/10.1198/004017002188618419</a>.
 </div>
-<div id="ref-LiFourier2020">
-<p>Li, Zongyi, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar. 2020. “Fourier Neural Operator for Parametric Partial Differential Equations.” <em>arXiv:2010.08895 [Cs, Math]</em>, October. <a href="http://arxiv.org/abs/2010.08895">http://arxiv.org/abs/2010.08895</a>.</p>
+<div id="ref-LiFourier2020" class="csl-entry">
+Li, Zongyi, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar. 2020. <span>“Fourier <span>Neural Operator</span> for <span>Parametric Partial Differential Equations</span>.”</span> <em>arXiv:2010.08895 [Cs, Math]</em>, October. <a href="http://arxiv.org/abs/2010.08895">http://arxiv.org/abs/2010.08895</a>.
 </div>
-<div id="ref-LindgrenExplicit2011">
-<p>Lindgren, Finn, Håvard Rue, and Johan Lindström. 2011. “An Explicit Link Between Gaussian Fields and Gaussian Markov Random Fields: The Stochastic Partial Differential Equation Approach.” <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> 73 (4): 423–98. <a href="https://doi.org/10.1111/j.1467-9868.2011.00777.x">https://doi.org/10.1111/j.1467-9868.2011.00777.x</a>.</p>
+<div id="ref-LindgrenExplicit2011" class="csl-entry">
+Lindgren, Finn, Håvard Rue, and Johan Lindström. 2011. <span>“An Explicit Link Between <span>Gaussian</span> Fields and <span>Gaussian Markov</span> Random Fields: The Stochastic Partial Differential Equation Approach.”</span> <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> 73 (4): 423–98. <a href="https://doi.org/10.1111/j.1467-9868.2011.00777.x">https://doi.org/10.1111/j.1467-9868.2011.00777.x</a>.
 </div>
-<div id="ref-LiuStatistical2020">
-<p>Liu, Xiao, Kyongmin Yeo, and Siyuan Lu. 2020. “Statistical Modeling for Spatio-Temporal Data from Stochastic Convection-Diffusion Processes.” <em>Journal of the American Statistical Association</em> 0 (0): 1–18. <a href="https://doi.org/10.1080/01621459.2020.1863223">https://doi.org/10.1080/01621459.2020.1863223</a>.</p>
+<div id="ref-LiuStatistical2020" class="csl-entry">
+Liu, Xiao, Kyongmin Yeo, and Siyuan Lu. 2020. <span>“Statistical <span>Modeling</span> for <span>Spatio</span>-<span>Temporal Data From Stochastic Convection</span>-<span>Diffusion Processes</span>.”</span> <em>Journal of the American Statistical Association</em> 0 (0): 1–18. <a href="https://doi.org/10.1080/01621459.2020.1863223">https://doi.org/10.1080/01621459.2020.1863223</a>.
 </div>
-<div id="ref-LuDeepONet2020">
-<p>Lu, Lu, Pengzhan Jin, and George Em Karniadakis. 2020. “DeepONet: Learning Nonlinear Operators for Identifying Differential Equations Based on the Universal Approximation Theorem of Operators.” <em>arXiv:1910.03193 [Cs, Stat]</em>, April. <a href="http://arxiv.org/abs/1910.03193">http://arxiv.org/abs/1910.03193</a>.</p>
+<div id="ref-LuDeepONet2020" class="csl-entry">
+Lu, Lu, Pengzhan Jin, and George Em Karniadakis. 2020. <span>“<span>DeepONet</span>: <span>Learning</span> Nonlinear Operators for Identifying Differential Equations Based on the Universal Approximation Theorem of Operators.”</span> <em>arXiv:1910.03193 [Cs, Stat]</em>, April. <a href="http://arxiv.org/abs/1910.03193">http://arxiv.org/abs/1910.03193</a>.
 </div>
-<div id="ref-QianLift2020">
-<p>Qian, Elizabeth, Boris Kramer, Benjamin Peherstorfer, and Karen Willcox. 2020. “Lift &amp; Learn: Physics-Informed Machine Learning for Large-Scale Nonlinear Dynamical Systems.” <em>Physica D: Nonlinear Phenomena</em> 406 (May): 132401. <a href="https://doi.org/10.1016/j.physd.2020.132401">https://doi.org/10.1016/j.physd.2020.132401</a>.</p>
+<div id="ref-QianLift2020" class="csl-entry">
+Qian, Elizabeth, Boris Kramer, Benjamin Peherstorfer, and Karen Willcox. 2020. <span>“Lift &amp; <span>Learn</span>: <span>Physics</span>-Informed Machine Learning for Large-Scale Nonlinear Dynamical Systems.”</span> <em>Physica D: Nonlinear Phenomena</em> 406 (May): 132401. <a href="https://doi.org/10.1016/j.physd.2020.132401">https://doi.org/10.1016/j.physd.2020.132401</a>.
 </div>
-<div id="ref-ScharfProcess2017">
-<p>Scharf, Henry R., Mevin B. Hooten, Devin S. Johnson, and John W. Durban. 2017. “Process Convolution Approaches for Modeling Interacting Trajectories.” <em>arXiv:1703.02112 [Stat]</em>, November. <a href="http://arxiv.org/abs/1703.02112">http://arxiv.org/abs/1703.02112</a>.</p>
+<div id="ref-ScharfProcess2017" class="csl-entry">
+Scharf, Henry R., Mevin B. Hooten, Devin S. Johnson, and John W. Durban. 2017. <span>“Process Convolution Approaches for Modeling Interacting Trajectories.”</span> <em>arXiv:1703.02112 [Stat]</em>, November. <a href="http://arxiv.org/abs/1703.02112">http://arxiv.org/abs/1703.02112</a>.
 </div>
-<div id="ref-SigristStochastic2015">
-<p>Sigrist, Fabio, Hans R. Künsch, and Werner A. Stahel. 2015. “Stochastic Partial Differential Equation Based Modelling of Large Space-Time Data Sets.” <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> 77 (1): 3–33. <a href="https://doi.org/10.1111/rssb.12061">https://doi.org/10.1111/rssb.12061</a>.</p>
+<div id="ref-SigristStochastic2015" class="csl-entry">
+Sigrist, Fabio, Hans R. Künsch, and Werner A. Stahel. 2015. <span>“Stochastic Partial Differential Equation Based Modelling of Large Space-Time Data Sets.”</span> <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> 77 (1): 3–33. <a href="https://doi.org/10.1111/rssb.12061">https://doi.org/10.1111/rssb.12061</a>.
 </div>
-<div id="ref-YangPhysicsInformed2020">
-<p>Yang, Liu, Dongkun Zhang, and George Em Karniadakis. 2020. “Physics-Informed Generative Adversarial Networks for Stochastic Differential Equations.” <em>SIAM Journal on Scientific Computing</em> 42 (1): A292–A317. <a href="https://doi.org/10.1137/18M1225409">https://doi.org/10.1137/18M1225409</a>.</p>
+<div id="ref-YangPhysicsInformed2020" class="csl-entry">
+Yang, Liu, Dongkun Zhang, and George Em Karniadakis. 2020. <span>“Physics-<span>Informed Generative Adversarial Networks</span> for <span>Stochastic Differential Equations</span>.”</span> <em>SIAM Journal on Scientific Computing</em> 42 (1): A292–317. <a href="https://doi.org/10.1137/18M1225409">https://doi.org/10.1137/18M1225409</a>.
 </div>
-<div id="ref-ZangWeak2020">
-<p>Zang, Yaohua, Gang Bao, Xiaojing Ye, and Haomin Zhou. 2020. “Weak Adversarial Networks for High-Dimensional Partial Differential Equations.” <em>Journal of Computational Physics</em> 411 (June): 109409. <a href="https://doi.org/10.1016/j.jcp.2020.109409">https://doi.org/10.1016/j.jcp.2020.109409</a>.</p>
+<div id="ref-ZangWeak2020" class="csl-entry">
+Zang, Yaohua, Gang Bao, Xiaojing Ye, and Haomin Zhou. 2020. <span>“Weak Adversarial Networks for High-Dimensional Partial Differential Equations.”</span> <em>Journal of Computational Physics</em> 411 (June): 109409. <a href="https://doi.org/10.1016/j.jcp.2020.109409">https://doi.org/10.1016/j.jcp.2020.109409</a>.
 </div>
 </div>
 </div>
