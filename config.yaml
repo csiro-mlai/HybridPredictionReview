@@ -17,13 +17,13 @@ permalinks:
 menu:
   main:
     - name: Learning PDEs
-      url: /page/learning_pdes.
+      url: /page/learning_pdes/
     - name: Groundwater emulation
       url: /page/groundwater_emulation/
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
-  description: A website built through Hugo and blogdown.
+  description: Notes towards emulating everything
   favicon: favicon.ico
   highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
   highlightjsLang:
