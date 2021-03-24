@@ -12,21 +12,46 @@ bibliography: refs.bib
 
 # Present
 
-* …
+* Dan Pagendam
+* Tao Cui
+* Dan MacKinlay
+
 
 # Since last time
 
+Dan M implemented the @LiFourier2020 method, trained it (Navier Stokes version) and tested it on artificial data.
+
 #  Discussions
 
-
-* Dan M questions 
+* Dan M Questions
 
   * can we get gradient out of MODFLOW sims?
+  
+    Tao: from alternative version
+    Dan M: I think this is low priority now
+  
   * how close to advection-diffusion are we in groundwater?
+  
+    Darcy equations (dispersion) + mass conservation
+
   * New training data set: can we get data set of groundwater sims with forcings and latent parameters for supervised learning?
+  
+    Tao stands ready to assist
+    
+  * Meta learning: can we learn a good set of models? (Petra also has this question)
+  
+    Deferred
+    
+  * Is there a reason that plain old MCMC won't work here? Is it just too slow?
+  
+    If we are prepared to pretend our likelihood function is real, why not?
+
 
 # Next steps
 
+* Update code base to work with pyro
+* get simulator for modflow problem
+* access more storage on the cluster. (apparently this shoudl be bower storage mlaifsp-hybrid-hydrology )
 
 # References
 
