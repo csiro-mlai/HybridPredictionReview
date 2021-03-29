@@ -51,7 +51,7 @@ Dan M implemented the @LiFourier2020 method, trained it (Navier Stokes version) 
 
 * Update code base to work with pyro
 * get simulator for modflow problem
-* access more storage on the cluster. (apparently this shoudl be bower storage mlaifsp-hybrid-hydrology )
+* access more storage on the cluster. (apparently this should be bowen storage mlaifsp-hybrid-hydrology )
 
 # References
 
