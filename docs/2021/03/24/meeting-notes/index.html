@@ -71,30 +71,48 @@
 <div id="present" class="section level1">
 <h1>Present</h1>
 <ul>
-<li>…</li>
+<li>Dan Pagendam</li>
+<li>Tao Cui</li>
+<li>Dan MacKinlay</li>
 </ul>
 </div>
 <div id="since-last-time" class="section level1">
 <h1>Since last time</h1>
+<p>Dan M implemented the <span class="citation">Li et al. (<a href="#ref-LiFourier2020" role="doc-biblioref">2020</a>)</span> method, trained it (Navier Stokes version) and tested it on artificial data.</p>
 </div>
 <div id="discussions" class="section level1">
 <h1>Discussions</h1>
 <ul>
-<li><p>Dan M questions</p>
+<li><p>Dan M Questions</p>
 <ul>
-<li>can we get gradient out of MODFLOW sims?</li>
-<li>how close to advection-diffusion are we in groundwater?</li>
-<li>New training data set: can we get data set of groundwater sims with forcings and latent parameters for supervised learning?</li>
+<li><p>can we get gradient out of MODFLOW sims?</p>
+<p>Tao: from alternative version
+Dan M: I think this is low priority now</p></li>
+<li><p>how close to advection-diffusion are we in groundwater?</p>
+<p>Darcy equations (dispersion) + mass conservation</p></li>
+<li><p>New training data set: can we get data set of groundwater sims with forcings and latent parameters for supervised learning?</p>
+<p>Tao stands ready to assist</p></li>
+<li><p>Meta learning: can we learn a good set of models? (Petra also has this question)</p>
+<p>Deferred</p></li>
+<li><p>Is there a reason that plain old MCMC won’t work here? Is it just too slow?</p>
+<p>If we are prepared to pretend our likelihood function is real, why not?</p></li>
 </ul></li>
 </ul>
 </div>
 <div id="next-steps" class="section level1">
 <h1>Next steps</h1>
+<ul>
+<li>Update code base to work with pyro</li>
+<li>get simulator for modflow problem</li>
+<li>access more storage on the cluster. (apparently this should be bowen storage mlaifsp-hybrid-hydrology )</li>
+</ul>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>
 <div id="refs">
-
+<div id="ref-LiFourier2020">
+<p>Li, Zongyi, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar. 2020. “Fourier Neural Operator for Parametric Partial Differential Equations.” <em>arXiv:2010.08895 [Cs, Math]</em>, October. <a href="http://arxiv.org/abs/2010.08895">http://arxiv.org/abs/2010.08895</a>.</p>
+</div>
 </div>
 </div>
 

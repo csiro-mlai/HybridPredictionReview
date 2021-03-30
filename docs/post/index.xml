@@ -6,7 +6,30 @@
     <description>Recent content in Posts on Hybrid prediction notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://csiro-mlai.github.io/HybridPredictionReview/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://csiro-mlai.github.io/HybridPredictionReview/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hydrology meeting notes</title>
+      <link>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/24/meeting-notes/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/24/meeting-notes/</guid>
+      <description>Present  Dan Pagendam Tao Cui Dan MacKinlay   Since last time Dan M implemented the Li et al. (2020) method, trained it (Navier Stokes version) and tested it on artificial data.
+ Discussions  Dan M Questions
+ can we get gradient out of MODFLOW sims?
+Tao: from alternative version Dan M: I think this is low priority now
+ how close to advection-diffusion are we in groundwater?</description>
+    </item>
+    
+    <item>
+      <title>Hydrology meeting notes</title>
+      <link>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/24/meeting-notes/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/24/meeting-notes/</guid>
+      <description> Present  …   Since last time  Discussions  Next steps  References Li, Zongyi, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar. 2020. “Fourier Neural Operator for Parametric Partial Differential Equations.” arXiv:2010.08895 [Cs, Math], October. http://arxiv.org/abs/2010.08895.
+   </description>
+    </item>
+    
     <item>
       <title>Hydrology meeting notes</title>
       <link>https://csiro-mlai.github.io/HybridPredictionReview/2021/03/10/meeting-notes/</link>
