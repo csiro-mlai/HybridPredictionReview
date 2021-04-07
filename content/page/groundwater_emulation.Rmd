@@ -148,3 +148,18 @@ can we learn the local loss surface?
 uncertainties?
 sensitivies?
 
+
+## People with skills of interest
+
+* Tao Cui, domain expert Hydrology and ML
+* Alec Stephenson, extreme value
+* Joel Dabrowski, time series/state models
+* Christian Walder, time series and kernels
+* Nicolas Langrene, stochastic DEs and control
+* Michael Bertolacci, spectral methods for spatiotemporal processes
+* ashfaqur rahman time series
+* Quanxi shao extremes
+* Andrew Wood (ANU) for SDE inference + Kevin Lu
+* Daniel Smith - has a time series classification problem that looks relevant
+
+
