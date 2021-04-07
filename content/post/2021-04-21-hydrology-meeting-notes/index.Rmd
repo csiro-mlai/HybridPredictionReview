@@ -1,7 +1,7 @@
 ---
 title: Hydrology meeting notes
 author: Dan MacKinlay
-date: '2021-03-24'
+date: '2021-04-21'
 slug: meeting-notes
 categories: []
 tags: []
@@ -17,6 +17,7 @@ bibliography: refs.bib
 
 # Since last time
 
+![](./modflow_prototype_data_model.svg)
 
 #  Discussions
 
