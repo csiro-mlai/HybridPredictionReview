@@ -17,6 +17,12 @@ bibliography: refs.bib
 
 # Since last time
 
+Tao and Dan have been working on generic simulations via MODFLOW to match the neural emulator.
+Plan to get modflow output that includes
+
+1. time-step data, not simply the data from the end of each stress period
+2. parse HDS-output to access this from python
+
 ![](./modflow_prototype_data_model.svg)
 
 #  Discussions
