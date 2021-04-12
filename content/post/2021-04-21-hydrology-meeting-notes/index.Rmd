@@ -24,8 +24,14 @@ Plan to get modflow output that includes
 2. parse HDS-output to access this from python
 
 ![](./modflow_prototype_data_model.svg)
+Notes on @LiFourier2020:
+
+1. We are essentially rediscovering section 5.4 in their methods at this stage (Bayesian inverse), although we we can also get the forcings implemented this will be an extension
+2. their Fourier transform implementation is terrible; we can do better
+
 
 #  Discussions
+
 
 
 # Next steps

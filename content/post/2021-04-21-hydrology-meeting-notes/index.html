@@ -20,7 +20,18 @@ bibliography: refs.bib
 </div>
 <div id="since-last-time" class="section level1">
 <h1>Since last time</h1>
-<p><img src="modflow_prototype_data_model.svg" /></p>
+<p>Tao and Dan have been working on generic simulations via MODFLOW to match the neural emulator.
+Plan to get modflow output that includes</p>
+<ol style="list-style-type: decimal">
+<li>time-step data, not simply the data from the end of each stress period</li>
+<li>parse HDS-output to access this from python</li>
+</ol>
+<p><img src="modflow_prototype_data_model.svg" />
+Notes on <span class="citation">Li et al. (<a href="#ref-LiFourier2020" role="doc-biblioref">2020</a>)</span>:</p>
+<ol style="list-style-type: decimal">
+<li>We are essentially rediscovering section 5.4 in their methods at this stage (Bayesian inverse), although we we can also get the forcings implemented this will be an extension</li>
+<li>their Fourier transform implementation is terrible; we can do better</li>
+</ol>
 </div>
 <div id="discussions" class="section level1">
 <h1>Discussions</h1>
