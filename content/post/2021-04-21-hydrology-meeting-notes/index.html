@@ -20,18 +20,28 @@ bibliography: refs.bib
 </div>
 <div id="since-last-time" class="section level1">
 <h1>Since last time</h1>
+<div id="simulation-progress" class="section level2">
+<h2>Simulation progress</h2>
 <p>Tao and Dan have been working on generic simulations via MODFLOW to match the neural emulator.
 Plan to get modflow output that includes</p>
 <ol style="list-style-type: decimal">
 <li>time-step data, not simply the data from the end of each stress period</li>
-<li>parse HDS-output to access this from python</li>
+<li>parse HDS-output to access this from python. Tao has provided scripts for this</li>
 </ol>
 <p><img src="modflow_prototype_data_model.svg" />
 Notes on <span class="citation">Li et al. (<a href="#ref-LiFourier2020" role="doc-biblioref">2020</a>)</span>:</p>
 <ol style="list-style-type: decimal">
 <li>We are essentially rediscovering section 5.4 in their methods at this stage (Bayesian inverse), although we we can also get the forcings implemented this will be an extension</li>
 <li>their Fourier transform implementation is terrible; we can do better</li>
+<li>Their comparison against traditional PDE solvers for MCMC is not fair — they differentiate through all iterations of the solver rather than using the fact that the system is at equilibrium, which penalises a traditional PDE solver.</li>
+<li>Various hacks in this model</li>
 </ol>
+</div>
+<div id="review-paper" class="section level2">
+<h2>Review paper</h2>
+<p>Process TBD.
+Examples: <span class="citation">Farkas et al. (<a href="#ref-FarkasWastewater2020" role="doc-biblioref">2020</a>)</span>; <span class="citation">Zema (<a href="#ref-ZemaPostfire2021" role="doc-biblioref">2021</a>)</span></p>
+</div>
 </div>
 <div id="discussions" class="section level1">
 <h1>Discussions</h1>
@@ -42,8 +52,14 @@ Notes on <span class="citation">Li et al. (<a href="#ref-LiFourier2020" role="do
 <div id="references" class="section level1">
 <h1>References</h1>
 <div id="refs">
+<div id="ref-FarkasWastewater2020">
+<p>Farkas, Kata, Luke S. Hillary, Shelagh K. Malham, James E. McDonald, and David L. Jones. 2020. “Wastewater and Public Health: The Potential of Wastewater Surveillance for Monitoring COVID-19.” <em>Current Opinion in Environmental Science &amp; Health</em> 17 (October): 14–20. <a href="https://doi.org/10.1016/j.coesh.2020.06.001">https://doi.org/10.1016/j.coesh.2020.06.001</a>.</p>
+</div>
 <div id="ref-LiFourier2020">
 <p>Li, Zongyi, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar. 2020. “Fourier Neural Operator for Parametric Partial Differential Equations.” <em>arXiv:2010.08895 [Cs, Math]</em>, October. <a href="http://arxiv.org/abs/2010.08895">http://arxiv.org/abs/2010.08895</a>.</p>
+</div>
+<div id="ref-ZemaPostfire2021">
+<p>Zema, Demetrio Antonio. 2021. “Postfire Management Impacts on Soil Hydrology.” <em>Current Opinion in Environmental Science &amp; Health</em> 21 (June): 100252. <a href="https://doi.org/10.1016/j.coesh.2021.100252">https://doi.org/10.1016/j.coesh.2021.100252</a>.</p>
 </div>
 </div>
 </div>

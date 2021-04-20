@@ -17,18 +17,26 @@ bibliography: refs.bib
 
 # Since last time
 
+## Simulation progress
+
 Tao and Dan have been working on generic simulations via MODFLOW to match the neural emulator.
 Plan to get modflow output that includes
 
 1. time-step data, not simply the data from the end of each stress period
-2. parse HDS-output to access this from python
+2. parse HDS-output to access this from python. Tao has provided scripts for this
 
 ![](./modflow_prototype_data_model.svg)
 Notes on @LiFourier2020:
 
 1. We are essentially rediscovering section 5.4 in their methods at this stage (Bayesian inverse), although we we can also get the forcings implemented this will be an extension
 2. their Fourier transform implementation is terrible; we can do better
+3. Their comparison against traditional PDE solvers for MCMC is not fair —  they differentiate through all iterations of the solver rather than using the fact that the system is at equilibrium, which penalises a traditional PDE solver.
+4. Various hacks in this model 
 
+## Review paper
+
+Process TBD.
+Examples: @FarkasWastewater2020; @ZemaPostfire2021
 
 #  Discussions
 
