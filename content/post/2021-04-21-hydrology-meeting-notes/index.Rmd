@@ -56,6 +56,8 @@ Using some material from https://danmackinlay.name/notebook/ml_pde.html
 * debug the data set handling issue
 * connect Tao's MODFLOW simulation code
 * posterior simulation using emulated likelihood
+* contact authors of paper to clarify
+* begin review paper, posibly starting from material in https://danmackinlay.name/notebook/ml_pde.html
 
 # References
 
