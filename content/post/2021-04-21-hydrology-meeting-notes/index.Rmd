@@ -13,8 +13,11 @@ bibliography: refs.bib
 
 # Present
 
-* …
-
+* Tao Cui
+* Petra Kuhnert
+* Dan Pagendam
+* David Robertson
+* Dan MacKinlay
 
 # Since last time
 
@@ -31,19 +34,28 @@ Notes on @LiFourier2020:
 
 1. We are essentially rediscovering section 5.4 in their methods at this stage (Bayesian inverse), although we we can also get the forcings implemented this will be an extension
 2. their Fourier transform implementation is terrible; we can do better
-3. Their comparison against traditional PDE solvers for MCMC is not fair —  they differentiate through all iterations of the solver rather than using the fact that the system is at equilibrium, which penalises a traditional PDE solver.
-4. The results in the paper are not reproducible in the case of interest to us - data-set handling differs between their training data and fitting procedure
+3. Their comparison against traditional PDE solvers for MCMC is not fair — they differentiate through all iterations of the solver rather than using the fact that the system is at equilibrium, which penalises a traditional PDE solver.
+4. The results in the paper are not reproducible in the case of interest to us — data-set handling differs between their training data and fitting procedure
 
 ## Review paper
 
 Process TBD.
 Examples: @FarkasWastewater2020; @ZemaPostfire2021
 
+Using some material from https://danmackinlay.name/notebook/ml_pde.html
+
 #  Discussions
 
-
+* Publishing as shiny app e.g. via https://shiny.csiro.au/
+* or as a distill app https://distill.pub/2020/circuits/visualizing-weights/
+* Petra's example: https://github.com/pkuhnert/MMPde
+* upcoming postdocs pitches 
 
 # Next steps
+
+* debug the data set handling issue
+* connect Tao's MODFLOW simulation code
+* posterior simulation using emulated likelihood
 
 # References
 
