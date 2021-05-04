@@ -13,13 +13,19 @@ bibliography: refs.bib
 
 # Present
 
+* Dan MacKinlay
+* Tao Cui
+* Dan Pagendam
 * …
 
 # Since last time
 
-* bugfix submitted to Zongyi Li
-* code updated to pytorch 1.8 (faster)
-* Additional bug: the code is BAD for impossible flows
+* data concatenation bug
+
+  * bugfix submitted to Zongyi Li
+  * His code now performs better
+  
+* code updated to pytorch 1.8 (faster and more comprehensible)
 * challenge: out-of-distribution predictions are terrible
 
 # Discussions

@@ -13,7 +13,10 @@
       <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/05/05/hydrology-meeting-notes/</guid>
-      <description>Present  …   Since last time  bugfix submitted to Zongyi Li code updated to pytorch 1.8 (faster) Additional bug: the code is BAD for impossible flows challenge: out-of-distribution predictions are terrible   Discussions  Next steps  References Farkas, Kata, Luke S. Hillary, Shelagh K. Malham, James E. McDonald, and David L. Jones. 2020. “Wastewater and Public Health: The Potential of Wastewater Surveillance for Monitoring COVID-19.</description>
+      <description>Present  Dan MacKinlay Tao Cui Dan Pagendam …   Since last time  data concatenation bug
+ bugfix submitted to Zongyi Li His code now performs better  code updated to pytorch 1.8 (faster and more comprehensible)
+ challenge: out-of-distribution predictions are terrible
+   Discussions  Next steps  References Farkas, Kata, Luke S. Hillary, Shelagh K. Malham, James E. McDonald, and David L. Jones. 2020.</description>
     </item>
     
     <item>
