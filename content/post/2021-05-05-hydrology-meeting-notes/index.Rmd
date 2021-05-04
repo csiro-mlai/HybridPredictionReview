@@ -17,8 +17,12 @@ bibliography: refs.bib
 
 # Since last time
 
+* bugfix submitted to Zongyi Li
+* code updated to pytorch 1.8 (faster)
+* Additional bug: the code is BAD for impossible flows
+* challenge: out-of-distribution predictions are terrible
 
-#  Discussions
+# Discussions
 
 # Next steps
 
