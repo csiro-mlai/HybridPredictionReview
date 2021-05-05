@@ -23,10 +23,10 @@ bibliography: refs.bib
 * data concatenation bug
 
   * bugfix submitted to Zongyi Li
-  * His code now performs better
+  * His code now performs better (!), and the results beat the published work 
   
-* [code updated to pytorch 1.8 ](https://github.com/csiro-mlai/GroundwaterEmulation/tree/master) (faster and more comprehensible)
-* challenge: out-of-distribution predictions are terrible
+* [our code updated to pytorch 1.8 ](https://github.com/csiro-mlai/GroundwaterEmulation/tree/master) (faster *and* simpler)
+* challenge: there is still terrible prediction on the test data.  New experiments support the idea that the problem here is not the code bug, but that out-of-distribution predictions are terrible. If the input data is unphysical, the output is meaningless. (Predictions from the validation set are pretty good, just no the synthetic examples)
 
 # Discussions
 

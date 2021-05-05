@@ -28,10 +28,10 @@ bibliography: refs.bib
 <li><p>data concatenation bug</p>
 <ul>
 <li>bugfix submitted to Zongyi Li</li>
-<li>His code now performs better</li>
+<li>His code now performs better (!), and the results beat the published work</li>
 </ul></li>
-<li><p><a href="https://github.com/csiro-mlai/GroundwaterEmulation/tree/master">code updated to pytorch 1.8</a> (faster and more comprehensible)</p></li>
-<li><p>challenge: out-of-distribution predictions are terrible</p></li>
+<li><p><a href="https://github.com/csiro-mlai/GroundwaterEmulation/tree/master">our code updated to pytorch 1.8</a> (faster <em>and</em> simpler)</p></li>
+<li><p>challenge: there is still terrible prediction on the test data. New experiments support the idea that the problem here is not the code bug, but that out-of-distribution predictions are terrible. If the input data is unphysical, the output is meaningless. (Predictions from the validation set are pretty good, just no the synthetic examples)</p></li>
 </ul>
 </div>
 <div id="discussions" class="section level1">
