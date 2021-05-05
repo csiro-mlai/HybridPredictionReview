@@ -25,7 +25,7 @@ bibliography: refs.bib
   * bugfix submitted to Zongyi Li
   * His code now performs better
   
-* code updated to pytorch 1.8 (faster and more comprehensible)
+* [code updated to pytorch 1.8 ](https://github.com/csiro-mlai/GroundwaterEmulation/tree/master) (faster and more comprehensible)
 * challenge: out-of-distribution predictions are terrible
 
 # Discussions
