@@ -13,9 +13,10 @@
       <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/05/05/hydrology-meeting-notes/</guid>
-      <description>Present  Dan MacKinlay Tao Cui Dan Pagendam …   Since last time  data concatenation bug
+      <description>Present  Dan MacKinlay Tao Cui Dan Pagendam   Since last time  data concatenation bug
  bugfix submitted to Zongyi Li His code now performs better (!), and the results beat the published work  our code updated to pytorch 1.8 (faster and simpler)
- challenge: there is still terrible prediction on the test data. New experiments support the idea that the problem here is not the code bug, but that out-of-distribution predictions are terrible.</description>
+ challenge: there is still bad prediction on the synthetic test data.
+   Discussions  challenge: New experiments support the idea that the problem with bad performance on synthetic test data is not the code bug, but that out-of-distribution predictions are bad.</description>
     </item>
     
     <item>

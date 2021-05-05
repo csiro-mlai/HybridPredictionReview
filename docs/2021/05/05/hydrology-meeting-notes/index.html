@@ -74,7 +74,6 @@
 <li>Dan MacKinlay</li>
 <li>Tao Cui</li>
 <li>Dan Pagendam</li>
-<li>…</li>
 </ul>
 </div>
 <div id="since-last-time" class="section level1">
@@ -86,13 +85,13 @@
 <li>His code now performs better (!), and the results beat the published work</li>
 </ul></li>
 <li><p><a href="https://github.com/csiro-mlai/GroundwaterEmulation/tree/master">our code updated to pytorch 1.8</a> (faster <em>and</em> simpler)</p></li>
-<li><p>challenge: there is still terrible prediction on the test data. New experiments support the idea that the problem here is not the code bug, but that out-of-distribution predictions are terrible. If the input data is unphysical, the output is meaningless. (Predictions from the validation set are pretty good, just no the synthetic examples)</p></li>
+<li><p>challenge: there is still bad prediction on the synthetic test data.</p></li>
 </ul>
 </div>
 <div id="discussions" class="section level1">
 <h1>Discussions</h1>
 <ul>
-<li>out-of-sample error</li>
+<li>challenge: New experiments support the idea that the problem with bad performance on synthetic test data is not the code bug, but that out-of-distribution predictions are bad. If the input data is unphysical, the output is meaningless. (Predictions from the validation set are pretty good, just no the synthetic examples)</li>
 <li>learning new tools is annoying</li>
 <li>learnable discretisation models <span class="citation">(Bar-Sinai et al. <a href="#ref-BarSinaiLearning2019" role="doc-biblioref">2019</a>)</span></li>
 </ul>

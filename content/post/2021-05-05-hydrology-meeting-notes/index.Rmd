@@ -16,7 +16,6 @@ bibliography: refs.bib
 * Dan MacKinlay
 * Tao Cui
 * Dan Pagendam
-* …
 
 # Since last time
 
