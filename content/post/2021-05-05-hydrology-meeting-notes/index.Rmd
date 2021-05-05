@@ -30,7 +30,16 @@ bibliography: refs.bib
 
 # Discussions
 
+* out-of-sample error
+* learning new tools is annoying
+* learnable discretisation models [@BarSinaiLearning2019]
+
+
 # Next steps
+
+* integrate modflow PDE data
+* integrate Navier-stoke PDE data
+* start lit review doc ([meeting style guide](https://www.elsevier.com/wps/find/journaldescription.cws_home/743096?generatepdf=true))
 
 # References
 

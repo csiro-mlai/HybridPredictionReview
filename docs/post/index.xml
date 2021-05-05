@@ -16,7 +16,7 @@
       <description>Present  Dan MacKinlay Tao Cui Dan Pagendam …   Since last time  data concatenation bug
  bugfix submitted to Zongyi Li His code now performs better  code updated to pytorch 1.8 (faster and more comprehensible)
  challenge: out-of-distribution predictions are terrible
-   Discussions  Next steps  References Farkas, Kata, Luke S. Hillary, Shelagh K. Malham, James E. McDonald, and David L. Jones. 2020.</description>
+   Discussions  out-of-sample error learning new tools is annoying learnable discretisation models (Bar-Sinai et al. 2019)   Next steps  integrate modflow PDE data integrate Navier-stoke PDE data start lit review doc (meeting style guide)   References Bar-Sinai, Yohai, Stephan Hoyer, Jason Hickey, and Michael P.</description>
     </item>
     
     <item>
