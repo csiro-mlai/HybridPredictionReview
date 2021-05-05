@@ -26,11 +26,11 @@ bibliography: refs.bib
   * His code now performs better (!), and the results beat the published work 
   
 * [our code updated to pytorch 1.8 ](https://github.com/csiro-mlai/GroundwaterEmulation/tree/master) (faster *and* simpler)
-* challenge: there is still terrible prediction on the test data.  New experiments support the idea that the problem here is not the code bug, but that out-of-distribution predictions are terrible. If the input data is unphysical, the output is meaningless. (Predictions from the validation set are pretty good, just no the synthetic examples)
+* challenge: there is still bad prediction on the synthetic test data. 
 
 # Discussions
 
-* out-of-sample error
+* challenge:  New experiments support the idea that the problem with bad performance on synthetic test data is not the code bug, but that out-of-distribution predictions are bad. If the input data is unphysical, the output is meaningless. (Predictions from the validation set are pretty good, just no the synthetic examples)
 * learning new tools is annoying
 * learnable discretisation models [@BarSinaiLearning2019]
 
