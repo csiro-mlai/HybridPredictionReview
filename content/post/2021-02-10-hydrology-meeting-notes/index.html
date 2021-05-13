@@ -1,0 +1,56 @@
+---
+title: "Hybrid Hydrology check-in"
+author: "Dan MacKinlay"
+institute: "MLAI-FSP"
+date: "2021-02-10"
+---
+
+
+
+<p>class: center</p>
+<div id="groundwater-emulation-check-in" class="section level1">
+<h1>Groundwater emulation check-in</h1>
+<div id="new-kanban-board" class="section level2">
+<h2>New kanban board</h2>
+<p><a href="https://github.com/orgs/csiro-mlai/projects/3">https://github.com/orgs/csiro-mlai/projects/3</a></p>
+</div>
+</div>
+<div id="loss-surface-approximation" class="section level1">
+<h1>Loss surface approximation</h1>
+<p><a href="https://github.com/csiro-mlai/GroundwaterEmulation/blob/master/SurrogateOpt.ipynb">GroundwaterEmulation/SurrogateOpt</a></p>
+<p><img src="objective_function_marginal.png" width="60%" /></p>
+</div>
+<div id="neural-operator-approximation" class="section level1">
+<h1>Neural operator approximation</h1>
+<p><a href="https://github.com/csiro-mlai/GroundwaterEmulation/blob/master/NN_Operator.ipynb">GroundwaterEmulation/NN_Operator</a></p>
+<video width="400" height="400">
+<source src="./forward_sim.mp4" type="video/mp4" autoplay>
+</video>
+</div>
+<div id="structure-free-model-wip" class="section level1">
+<h1>Structure-free model (WIP)</h1>
+<p><img src="structure_free_fit.png" width="60%" />
+<a href="https://github.com/csiro-mlai/GroundwaterEmulation/blob/master/StructureFreeModel.ipynb">GroundwaterEmulation/StructureFreeModel</a></p>
+</div>
+<div id="random-netsdegp-translation-wip" class="section level1">
+<h1>Random net/SDE/GP translation (WIP)</h1>
+<p>Translates between</p>
+<ul>
+<li>SDEs,</li>
+<li>covariance kernels, and</li>
+<li>NNs.</li>
+</ul>
+<p><span class="math display">\[\begin{aligned}
+    \hat{\kappa}(\mathbf{\hat{x}}_p, \mathbf{\hat{x}}_q) &amp;= \mathbb{E}[\psi(\mathbf{W}^\top \mathbf{\hat{x}}_p) \psi(\mathbf{W}^\top \mathbf{\hat{x}}_q)] \\
+    &amp;= \Vert \mathbf{\hat{x}}_p \Vert \Vert \mathbf{\hat{x}}_q \Vert \mathbb{E}[\psi(\mathbf{W}^\top \mathbf{\hat{x}}_p/\Vert \mathbf{\hat{x}}_p \Vert ) \psi(\mathbf{W}^\top \mathbf{\hat{x}}_q/\Vert \mathbf{\hat{x}}_q \Vert )] \\
+    &amp;= \Vert \mathbf{\hat{x}}_p \Vert \Vert \mathbf{\hat{x}}_q \Vert \underbrace{\mathbb{E}[\psi(\mathbf{W}^\top \mathbf{x}_p ) \psi(\mathbf{W}^\top \mathbf{x}_q )]}_{\kappa(\mathbf{x}_p, \mathbf{x}_q)},
+\end{aligned}\]</span></p>
+</div>
+<div id="latent-function-priors-tbd" class="section level1">
+<h1>Latent function priors (TBD)</h1>
+<p>Lévy subordinators</p>
+</div>
+<div id="uncertainty-quantification-tbd" class="section level1">
+<h1>Uncertainty quantification (TBD)</h1>
+<p><a href="https://confluence.csiro.au/display/MLAIFSP/Reading+Group">Exploring in next week’s reading group</a></p>
+</div>

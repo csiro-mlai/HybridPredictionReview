@@ -84,5 +84,20 @@ However we need to be careful about conditioning; If we out neural networl is no
  Next steps  Dan M: Non-stationary inference methods investigation, e.</description>
     </item>
     
+    <item>
+      <title>Hybrid Hydrology check-in</title>
+      <link>https://csiro-mlai.github.io/HybridPredictionReview/2021/02/10/hybrid-hydrology-check-in/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/02/10/hybrid-hydrology-check-in/</guid>
+      <description>class: center
+Groundwater emulation check-in New kanban board https://github.com/orgs/csiro-mlai/projects/3
+  Loss surface approximation GroundwaterEmulation/SurrogateOpt
+ Neural operator approximation GroundwaterEmulation/NN_Operator
+  Structure-free model (WIP) GroundwaterEmulation/StructureFreeModel
+ Random net/SDE/GP translation (WIP) Translates between
+ SDEs, covariance kernels, and NNs.  \[\begin{aligned} \hat{\kappa}(\mathbf{\hat{x}}_p, \mathbf{\hat{x}}_q) &amp;amp;= \mathbb{E}[\psi(\mathbf{W}^\top \mathbf{\hat{x}}_p) \psi(\mathbf{W}^\top \mathbf{\hat{x}}_q)] \\ &amp;amp;= \Vert \mathbf{\hat{x}}_p \Vert \Vert \mathbf{\hat{x}}_q \Vert \mathbb{E}[\psi(\mathbf{W}^\top \mathbf{\hat{x}}_p/\Vert \mathbf{\hat{x}}_p \Vert ) \psi(\mathbf{W}^\top \mathbf{\hat{x}}_q/\Vert \mathbf{\hat{x}}_q \Vert )] \\ &amp;amp;= \Vert \mathbf{\hat{x}}_p \Vert \Vert \mathbf{\hat{x}}_q \Vert \underbrace{\mathbb{E}[\psi(\mathbf{W}^\top \mathbf{x}_p ) \psi(\mathbf{W}^\top \mathbf{x}_q )]}_{\kappa(\mathbf{x}_p, \mathbf{x}_q)}, \end{aligned}\]</description>
+    </item>
+    
   </channel>
 </rss>

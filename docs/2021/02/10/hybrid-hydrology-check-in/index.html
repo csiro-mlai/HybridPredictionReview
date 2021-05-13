@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.81.0" />
+
+
+<title>Hybrid Hydrology check-in - Hybrid prediction notes</title>
+<meta property="og:title" content="Hybrid Hydrology check-in - Hybrid prediction notes">
+
+
+  <link href='https://csiro-mlai.github.io/HybridPredictionReview/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/HybridPredictionReview/css/fonts.css" media="all">
+<link rel="stylesheet" href="/HybridPredictionReview/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/HybridPredictionReview/" class="nav-logo">
+    <img src="/HybridPredictionReview/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/HybridPredictionReview/page/groundwater_emulation/">Groundwater emulation</a></li>
+    
+    <li><a href="/HybridPredictionReview/page/learning_pdes/">Learning PDEs</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Hybrid Hydrology check-in</h1>
+
+    
+    <span class="article-date">2021-02-10</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>class: center</p>
+<div id="groundwater-emulation-check-in" class="section level1">
+<h1>Groundwater emulation check-in</h1>
+<div id="new-kanban-board" class="section level2">
+<h2>New kanban board</h2>
+<p><a href="https://github.com/orgs/csiro-mlai/projects/3">https://github.com/orgs/csiro-mlai/projects/3</a></p>
+</div>
+</div>
+<div id="loss-surface-approximation" class="section level1">
+<h1>Loss surface approximation</h1>
+<p><a href="https://github.com/csiro-mlai/GroundwaterEmulation/blob/master/SurrogateOpt.ipynb">GroundwaterEmulation/SurrogateOpt</a></p>
+<p><img src="objective_function_marginal.png" width="60%" /></p>
+</div>
+<div id="neural-operator-approximation" class="section level1">
+<h1>Neural operator approximation</h1>
+<p><a href="https://github.com/csiro-mlai/GroundwaterEmulation/blob/master/NN_Operator.ipynb">GroundwaterEmulation/NN_Operator</a></p>
+<video width="400" height="400">
+<source src="./forward_sim.mp4" type="video/mp4" autoplay>
+</video>
+</div>
+<div id="structure-free-model-wip" class="section level1">
+<h1>Structure-free model (WIP)</h1>
+<p><img src="structure_free_fit.png" width="60%" />
+<a href="https://github.com/csiro-mlai/GroundwaterEmulation/blob/master/StructureFreeModel.ipynb">GroundwaterEmulation/StructureFreeModel</a></p>
+</div>
+<div id="random-netsdegp-translation-wip" class="section level1">
+<h1>Random net/SDE/GP translation (WIP)</h1>
+<p>Translates between</p>
+<ul>
+<li>SDEs,</li>
+<li>covariance kernels, and</li>
+<li>NNs.</li>
+</ul>
+<p><span class="math display">\[\begin{aligned}
+    \hat{\kappa}(\mathbf{\hat{x}}_p, \mathbf{\hat{x}}_q) &amp;= \mathbb{E}[\psi(\mathbf{W}^\top \mathbf{\hat{x}}_p) \psi(\mathbf{W}^\top \mathbf{\hat{x}}_q)] \\
+    &amp;= \Vert \mathbf{\hat{x}}_p \Vert \Vert \mathbf{\hat{x}}_q \Vert \mathbb{E}[\psi(\mathbf{W}^\top \mathbf{\hat{x}}_p/\Vert \mathbf{\hat{x}}_p \Vert ) \psi(\mathbf{W}^\top \mathbf{\hat{x}}_q/\Vert \mathbf{\hat{x}}_q \Vert )] \\
+    &amp;= \Vert \mathbf{\hat{x}}_p \Vert \Vert \mathbf{\hat{x}}_q \Vert \underbrace{\mathbb{E}[\psi(\mathbf{W}^\top \mathbf{x}_p ) \psi(\mathbf{W}^\top \mathbf{x}_q )]}_{\kappa(\mathbf{x}_p, \mathbf{x}_q)},
+\end{aligned}\]</span></p>
+</div>
+<div id="latent-function-priors-tbd" class="section level1">
+<h1>Latent function priors (TBD)</h1>
+<p>Lévy subordinators</p>
+</div>
+<div id="uncertainty-quantification-tbd" class="section level1">
+<h1>Uncertainty quantification (TBD)</h1>
+<p><a href="https://confluence.csiro.au/display/MLAIFSP/Reading+Group">Exploring in next week’s reading group</a></p>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/HybridPredictionReview/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/HybridPredictionReview/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/HybridPredictionReview/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
