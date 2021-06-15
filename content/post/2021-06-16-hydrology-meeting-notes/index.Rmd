@@ -22,7 +22,7 @@ bibliography: refs.bib
   * induces new uncertainty quantification problem 
   * State is “too long”
 
-* Alasdair Tran (Working with Alex Matthews and Lexing Xie at ANU) is working on exactly this model and encountering parallel issues.
+* Alasdair Tran (Working with Alex Matthews and Lexing Xie at ANU) is working on exactly this model (2d fluid flow in time) and encountering sdimilar problems. May be worth code sharing.
 
 # Discussions
 
