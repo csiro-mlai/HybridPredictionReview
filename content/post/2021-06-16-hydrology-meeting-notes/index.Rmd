@@ -1,0 +1,38 @@
+---
+title: Hydrology meeting notes
+author: Dan MacKinlay
+date: '2021-06-16'
+slug: hydrology-meeting-notes
+categories: []
+tags: []
+nocite:
+- '@*'
+bibliography: refs.bib
+---
+
+# Present
+
+
+# Since last time
+
+* MARS2021 😅
+* [groundwater modeling review doc commenced](https://www.overleaf.com/3226512942vxpbqtsrggtn)
+* further development in Fourier Neural Operator
+
+  * induces new uncertainty quantification problem 
+  * State is “too long”
+
+* Alasdair Tran (Working with Alex Matthews and Lexing Xie at ANU) is working on exactly this model and encountering parallel issues.
+
+# Discussions
+
+
+# Next steps
+
+* Allow FNO to learn hidden state
+
+# References
+
+::: {#refs}
+:::
+
