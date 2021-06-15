@@ -6,7 +6,22 @@
     <description>Recent content in Posts on Hybrid prediction notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://csiro-mlai.github.io/HybridPredictionReview/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://csiro-mlai.github.io/HybridPredictionReview/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hydrology meeting notes</title>
+      <link>https://csiro-mlai.github.io/HybridPredictionReview/2021/06/16/hydrology-meeting-notes/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/06/16/hydrology-meeting-notes/</guid>
+      <description>Present  Since last time  MARS2021 😅
+ groundwater modeling review doc commenced
+ further development in Fourier Neural Operator
+ ported reference PDE solver to pytorch 1.8 so that it can be run with the emulator    Discussions  FNO matters arising.
+ Induces multiple UQ problems
+ emulator OOD uncertainty classic model uncertainty  Conditionalising on latent parameters (WIP)
+ Needs conditional simulations (code in development)</description>
+    </item>
+    
     <item>
       <title>Hydrology meeting notes</title>
       <link>https://csiro-mlai.github.io/HybridPredictionReview/2021/05/05/hydrology-meeting-notes/</link>

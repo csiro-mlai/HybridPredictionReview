@@ -37,7 +37,7 @@ bibliography: refs.bib
     * State is “too long” — do we really want to learn 10 steps of history for each forward step? It is manageable but messy.
     * Can we teach the simulator to learn hidden state (velocity etc) _instead_ of past time steps?
 
-      * model-based NN might be a solution here — see @RevachKalmannet2021 in the new ICASSP proceedings
+      * model-based NN might be a solution here — see @RevachKalmannet2021 in the  ICASSP2021 proceedings
 
 * Alasdair Tran (Working with Alex Matthews and Lexing Xie at ANU) is working on exactly this model (2d fluid flow in time) and encountering sdimilar problems. May be worth code sharing.
 
