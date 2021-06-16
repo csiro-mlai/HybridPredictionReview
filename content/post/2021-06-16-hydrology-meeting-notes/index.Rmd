@@ -43,7 +43,10 @@ bibliography: refs.bib
 
 # Next steps
 
-* Allow FNO to learn hidden state
+* Conditionalising model
+* data ingestion
+* OOD error
+* mixture density?
 
 # References
 
