@@ -1,0 +1,29 @@
+---
+title: Hydrology meeting notes
+author: Dan MacKinlay
+date: '2021-06-30'
+slug: hydrology-meeting-notes
+categories: []
+tags: []
+nocite:
+- '@*'
+bibliography: refs.bib
+---
+
+# Present
+
+
+# Since last time
+
+# Discussions
+
+
+
+# Next steps
+
+
+# References
+
+::: {#refs}
+:::
+

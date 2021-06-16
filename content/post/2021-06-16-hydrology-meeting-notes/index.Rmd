@@ -12,6 +12,10 @@ bibliography: refs.bib
 
 # Present
 
+* Tao Cui
+* Dan Pagendam
+* David Robertson
+* Dan MacKinlay
 
 # Since last time
 

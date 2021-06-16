@@ -55,72 +55,31 @@
 
   <article class="article">
     
-    <span class="article-duration">2 min read</span>
+    <span class="article-duration">1 min read</span>
     
 
     <h1 class="article-title">Hydrology meeting notes</h1>
 
     
-    <span class="article-date">2021-06-16</span>
+    <span class="article-date">2021-06-30</span>
     
 
     <div class="article-content">
       
-<script src="https://csiro-mlai.github.io/HybridPredictionReview/2021/06/16/hydrology-meeting-notes/index_files/header-attrs/header-attrs.js"></script>
+<script src="https://csiro-mlai.github.io/HybridPredictionReview/2021/06/30/hydrology-meeting-notes/index_files/header-attrs/header-attrs.js"></script>
 
 
 <div id="present" class="section level1">
 <h1>Present</h1>
-<ul>
-<li>Tao Cui</li>
-<li>Dan Pagendam</li>
-<li>David Robertson</li>
-<li>Dan MacKinlay</li>
-</ul>
 </div>
 <div id="since-last-time" class="section level1">
 <h1>Since last time</h1>
-<ul>
-<li><p>MARS2021 😅</p></li>
-<li><p><a href="https://www.overleaf.com/3226512942vxpbqtsrggtn">groundwater modeling review doc commenced</a></p></li>
-<li><p>further development in Fourier Neural Operator</p>
-<ul>
-<li>ported reference PDE solver to pytorch 1.8 so that it can be run with the emulator</li>
-</ul></li>
-</ul>
 </div>
 <div id="discussions" class="section level1">
 <h1>Discussions</h1>
-<ul>
-<li><p>FNO matters arising.</p>
-<ul>
-<li><p>Induces multiple UQ problems</p>
-<ul>
-<li>emulator OOD uncertainty</li>
-<li>classic model uncertainty</li>
-</ul></li>
-<li><p>Conditionalising on latent parameters (WIP)</p>
-<ul>
-<li><p>Needs conditional simulations (code in development)</p></li>
-<li><p>Need conditional NN (code not yet started)</p></li>
-<li><p>State is “too long” — do we really want to learn 10 steps of history for each forward step? It is manageable but messy.</p></li>
-<li><p>Can we teach the simulator to learn hidden state (velocity etc) <em>instead</em> of past time steps?</p>
-<ul>
-<li>model-based NN might be a solution here — see <span class="citation"><a href="#ref-RevachKalmannet2021" role="doc-biblioref">Revach et al.</a> (<a href="#ref-RevachKalmannet2021" role="doc-biblioref">2021</a>)</span> in the ICASSP2021 proceedings</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><p>Alasdair Tran (Working with Alex Matthews and Lexing Xie at ANU) is working on exactly this model (2d fluid flow in time) and encountering sdimilar problems. May be worth code sharing.</p></li>
-</ul>
 </div>
 <div id="next-steps" class="section level1">
 <h1>Next steps</h1>
-<ul>
-<li>Conditionalising model</li>
-<li>data ingestion</li>
-<li>OOD error</li>
-<li>mixture density?</li>
-</ul>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>
