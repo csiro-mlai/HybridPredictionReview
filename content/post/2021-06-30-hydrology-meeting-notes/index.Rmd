@@ -10,21 +10,21 @@ nocite:
 bibliography: refs.bib
 ---
 
-# Present
+## Present
 
 * Dan MacKinlay
 
 
 # Since last time
 
-## ICASSP happened
+### ICASSP happened
 
 Main result of interest:
 _model driven filtering_ [@RevachKalmannet2021;ShlezingerModelBased2020].
 
-## Software details
+### Software engineeering
 
-[Much software engineering](https://github.com/alasdairtran/fourierflow/blob/main/fourierflow/datastores/synthetic/ns_2d.py)
+[Much software engineering](https://github.com/alasdairtran/fourierflow/blob/main/fourierflow/datastores/synthetic/ns_2d.py) has been happening
 
 This is needed so that 
 
@@ -41,7 +41,7 @@ Currently we are investigating some alternative solvers to see which is least an
 ![](./PDE_solvers.png)
 
 
-## Project upscaling discussions
+### Project upscaling discussions
 
 If we had other workers on the project and we broadened the scope, could we put them to work?
 
