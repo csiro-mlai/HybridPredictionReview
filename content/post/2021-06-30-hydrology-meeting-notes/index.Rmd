@@ -17,6 +17,11 @@ bibliography: refs.bib
 
 # Since last time
 
+## ICASSP happened
+
+Main result of interest:
+_model driven filtering_ [@RevachKalmannet2021;ShlezingerModelBased2020].
+
 ## Software details
 
 [Much software engineering](https://github.com/alasdairtran/fourierflow/blob/main/fourierflow/datastores/synthetic/ns_2d.py)

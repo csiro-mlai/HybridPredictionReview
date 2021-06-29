@@ -13,11 +13,11 @@
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/06/30/hydrology-meeting-notes/</guid>
-      <description>Present  Dan MacKinlay   Since last time Software details Much software engineering
+      <description>Present  Dan MacKinlay   Since last time ICASSP happened Main result of interest: model driven filtering [Revach et al. (2021);ShlezingerModelBased2020].
+ Software details Much software engineering
 This is needed so that
 code is cleaner (nice) code can be parallelized on our HPC (needed eventually) input data can be generalized (needed right now)  This work is conducted in collaboration with Alasdair Tran at ANU CECs.
-Currently we are investigating some alternative solvers to see which is least annoying.
- Project upscaling discussions If we had other workers on the project and we broadened the scope, could we put them to work?</description>
+Currently we are investigating some alternative solvers to see which is least annoying.</description>
     </item>
     
     <item>
