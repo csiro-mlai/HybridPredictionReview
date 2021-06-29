@@ -123,10 +123,10 @@
     },
     "mime": {
       "Package": "mime",
-      "Version": "0.10",
+      "Version": "0.11",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "26fa77e707223e1ce042b2b5d09993dc"
+      "Hash": "8974a907200fc9948d636fe7d85ca9fb"
     },
     "promises": {
       "Package": "promises",
@@ -186,10 +186,10 @@
     },
     "xaringan": {
       "Package": "xaringan",
-      "Version": "0.21",
+      "Version": "0.22",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "dc0f5dfeb019f08b0f1b912e6385ad0c"
+      "Hash": "c0ed5b878f24730ed7f4afbb95af84ae"
     },
     "xfun": {
       "Package": "xfun",

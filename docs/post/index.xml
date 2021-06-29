@@ -13,7 +13,11 @@
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://csiro-mlai.github.io/HybridPredictionReview/2021/06/30/hydrology-meeting-notes/</guid>
-      <description>  Present  Since last time  Discussions  Next steps  References Revach, Guy, Nir Shlezinger, Ruud J. G. van Sloun, and Yonina C. Eldar. 2021. “Kalmannet: Data-Driven Kalman Filtering.” In ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 3905–9. https://doi.org/10.1109/ICASSP39728.2021.9413750.  Shlezinger, Nir, Jay Whang, Yonina C. Eldar, and Alexandros G. Dimakis. 2020. “Model-Based Deep Learning.” arXiv:2012.08405 [Cs, Eess], December. https://arxiv.org/abs/2012.08405.    </description>
+      <description>Present  Dan MacKinlay   Since last time Software details Much software engineering
+This is needed so that
+code is cleaner (nice) code can be parallelized on our HPC (needed eventually) input data can be generalized (needed right now)  This work is conducted in collaboration with Alasdair Tran at ANU CECs.
+Currently we are investigating some alternative solvers to see which is least annoying.
+ Project upscaling discussions If we had other workers on the project and we broadened the scope, could we put them to work?</description>
     </item>
     
     <item>

@@ -12,8 +12,46 @@ bibliography: refs.bib
 
 # Present
 
+* Dan MacKinlay
+
 
 # Since last time
+
+## Software details
+
+[Much software engineering](https://github.com/alasdairtran/fourierflow/blob/main/fourierflow/datastores/synthetic/ns_2d.py)
+
+This is needed so that 
+
+1. code is cleaner (nice)
+2. code can be parallelized on our HPC (needed eventually)
+3. input data can be generalized (needed right now)
+
+This work is conducted in collaboration with Alasdair Tran at ANU CECs. 
+
+![](./pytorch_upgrade_chat.png)
+
+Currently we are investigating some alternative solvers to see which is least annoying. 
+
+![](./PDE_solvers.png)
+
+
+## Project upscaling discussions
+
+If we had other workers on the project and we broadened the scope, could we put them to work?
+
+IMO, yes.
+We could easily spend more hours on the most time-consuming parts of the project
+In (Dan's) estimated priority order these would be
+
+1. HPC implementation
+2. PDE analysis
+3. Neural uncertainty quantification
+
+Alternatively, can we access labour from other sources?
+
+Several people have expressed degrees of interest in the project.
+(Mahmood Aktar at IM&T, Xuhui Fan at MLAIFSP Context(?), Alasdair Tran at ANU CECS). 
 
 # Discussions
 
