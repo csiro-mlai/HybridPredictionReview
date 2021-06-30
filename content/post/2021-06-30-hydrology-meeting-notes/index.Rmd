@@ -43,20 +43,19 @@ Currently we are investigating some alternative solvers to see which is least an
 ![](./PDE_solvers.png)
 
 
-### Project upscaling discussions
+### Project upscaling meeting
 
 If we had other workers on the project and we broadened the scope, could we put them to work?
 
-IMO, yes.
+In Dan's opinion, yes.
 We could easily spend more hours on the most time-consuming parts of the project
-In (Dan's) estimated priority order these would be
+In (Dan's) estimated priority order of needed skills would 
 
 1. HPC implementation
 2. PDE analysis
 3. Neural uncertainty quantification
 
 Alternatively, can we access labour from other sources?
-
 Several people have expressed degrees of interest in the project.
 (Mahmood Aktar at IM&T, Xuhui Fan at MLAIFSP Context(?), Alasdair Tran at ANU CECS). 
 
@@ -67,21 +66,18 @@ Several people have expressed degrees of interest in the project.
 # Next steps
 
 * application paper 
-  Some journals to consider:
+  Some journals to consider, in order:
 
- 
-  We also can try 
-
-  * Nature Geosciences https://www.nature.com/ngeo/ and
-  * Nature Communications https://www.nature.com/ncomms/about
-  * Water Resources Reserarch https://agupubs.onlinelibrary.wiley.com/journal/19447973
-  * Journal of Hydrology https://www.journals.elsevier.com/journal-of-hydrology
+  * [Nature Geosciences](https://www.nature.com/ngeo/) and
+  * [Nature Communications](https://www.nature.com/ncomms/about)
+  * [Water Resources Reserarch](https://agupubs.onlinelibrary.wiley.com/journal/19447973)
+  * [Journal of Hydrology](https://www.journals.elsevier.com/journal-of-hydrology)
   * https://www.journals.elsevier.com/environmental-modelling-and-software/
   * https://www.frontiersin.org/research-topics/22582
 
 * Start writing (overleaf)
-
-Follow up on `bowen` allocation.
+* Follow up on `bowen` allocation.
+* move this document onto internal servers so we can discuss internal matters
 
 # References
 
