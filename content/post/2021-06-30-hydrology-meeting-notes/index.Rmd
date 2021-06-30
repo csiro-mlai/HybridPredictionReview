@@ -22,7 +22,7 @@ bibliography: refs.bib
 ### ICASSP happened
 
 Main result of interest:
-_model driven filtering_ [@RevachKalmannet2021;ShlezingerModelBased2020].
+_model driven filtering_ [@RevachKalmannet2021;@ShlezingerModelBased2020].
 
 ### Software engineeering
 
