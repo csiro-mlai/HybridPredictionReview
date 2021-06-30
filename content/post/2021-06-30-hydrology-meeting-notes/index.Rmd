@@ -13,7 +13,9 @@ bibliography: refs.bib
 ## Present
 
 * Dan MacKinlay
-
+* Dan Pagendam
+* Tao Cui
+* Petra
 
 # Since last time
 
@@ -64,6 +66,22 @@ Several people have expressed degrees of interest in the project.
 
 # Next steps
 
+* application paper 
+  Some journals to consider:
+
+ 
+  We also can try 
+
+  * Nature Geosciences https://www.nature.com/ngeo/ and
+  * Nature Communications https://www.nature.com/ncomms/about
+  * Water Resources Reserarch https://agupubs.onlinelibrary.wiley.com/journal/19447973
+  * Journal of Hydrology https://www.journals.elsevier.com/journal-of-hydrology
+  * https://www.journals.elsevier.com/environmental-modelling-and-software/
+  * https://www.frontiersin.org/research-topics/22582
+
+* Start writing (overleaf)
+
+Follow up on `bowen` allocation.
 
 # References
 
